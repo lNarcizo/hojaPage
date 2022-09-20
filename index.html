@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,19 +7,84 @@
         <title>Page Title</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </head>
-    <body class="bg-secondary">
+    <style>
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
 
-        <nav class="navbar bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../img/Jornal_Hoje_1971.svg" alt="" width="30" height="24">
-                </a>
-            </div>
-        </nav>
+        .caroucel-center{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+    <body class="bg-light">
 
+        <header>
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/Jornal_Hoje_1971.svg" class="icon-dark" alt="" width="30" height="24">
+                    </a>
+                    <div class="text-center">
+                        <h3 class="blog-header-logo text-dark">Hoje</h3>
+                    </div>
+                </div>
+            </nav>
+        </header>
         
         <main class="row justify-content-center mt-4">
+
+
+            <div class="col-12 mb-4">
+                <div class="caroucel-center justify-content-center">
+                    <div id="carouselExampleIndicators" class="carousel carousel-dark slide col-10 d-flex center-block" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://seucreditodigital.com.br/wp-content/uploads/2022/09/preco-da-cesta-basica-cai-na-maioria-das-capitais-pesquisadas.jpg" class="w-100" alt="loading...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Preço da cesta básica cai na maioria das capitais pesquisadas - Seu Crédito Digital</h5>
+                                    <p>O preço da cesta básica registrou baixa em diversas capitais brasileiras no mês de agosto, segundo o Dieese</p>
+                                    <a target="_blank" href="https://seucreditodigital.com.br/preco-da-cesta-basica-cai-na-maioria-das-capitais-pesquisadas/" class="btn btn-secondary">Continue lendo</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://conteudo.imguol.com.br/c/noticias/fb/2022/05/10/10-mai-2022---principe-charles-olha-para-a-coroa-imperial-do-estado-enquanto-faz-o-discurso-da-rainha-na-camara-dos-lordes-em-londres-reino-unido-1652186106605_v2_615x300.jpg" class="w-100" alt="loading...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="">Quando Charles vira rei? Entenda o plano de sucessão até a coroação - UOL</h5>
+                                    <p class="">Segundo os protocolos estabelecidos na "Operação London Bridge", plano de ação do Palácio de Buckingham após a morte da rainha Elizabeth 2ª, aos 96 anos, o conselho se reúne no dia D+1, no Palácio St. James, e proclama Charles como o novo rei.O dia da mor</p>
+                                    <a target="_blank" href="https://noticias.uol.com.br/internacional/ultimas-noticias/2022/09/08/quando-charles-vira-rei-entenda-plano-de-sucessao-ate-coroacao.htm" class="btn btn-secondary">Continue lendo</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ytimg.com/vi/d89bIm9c3-I/maxresdefault_live.jpg" class="w-100" alt="loading...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="">AO VIVO: Acompanhe a cobertura da morte da rainha Elizabeth II | CNN 360º - 08/09/2022 - CNN Brasil</h5>
+                                    <p class="">Assista,AO,<a target="_blank" href="https://www.youtube.com">VIVO</a>,ao,programa,CNN,360º,desta,quinta-feira,,8,de,setembro,de,2022,,apresentado,por,Daniela,Lima.Inscreva-se,no,canal,da,CNN,Brasil,no,YouTube.AC...</p>
+                                    <a target="_blank" href="https://www.youtube.com/watch?v=d89bIm9c3-I" class="btn btn-secondary">Continue lendo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
 
 
             <div class="col-12 mb-4">
@@ -59,221 +125,221 @@
                 <section class="row justify-content-center">
                     
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card">
-                            <img src="https://s2.glbimg.com/D9lw_8g5hmqXUHBzpAqbqJXEyHg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/d/0/B5wwL4TEC4iICMEFIShQ/whatsapp-image-2022-09-01-at-16.09.19.jpeg" class="card-img-top" alt="loading...">
+                        <article class="card bg-dark">
+                            <img src="https://seucreditodigital.com.br/wp-content/uploads/2022/09/preco-da-cesta-basica-cai-na-maioria-das-capitais-pesquisadas.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Fuzil é apreendido durante operação na casa de Washington Reis - Globo</h5>
-                                <p class="card-text">Ex-prefeito de Duque de Caxias é candidato a vice na chapa de Cláudio Castro, do PL.</p>
-                                <a target="_blank" href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/09/01/fuzil-e-apreendido-durante-operacao-na-casa-de-washington-reis.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title text-light">Preço da cesta básica cai na maioria das capitais pesquisadas - Seu Crédito Digital</h5>
+                                <p class="card-text text-light">O preço da cesta básica registrou baixa em diversas capitais brasileiras no mês de agosto, segundo o Dieese</p>
+                                <a target="_blank" href="https://seucreditodigital.com.br/preco-da-cesta-basica-cai-na-maioria-das-capitais-pesquisadas/" class="btn btn-light">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://mundorubronegro.com/wp-content/uploads/2022/09/52326072519_bcae977ac8_k-e1662056761416.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://conteudo.imguol.com.br/c/noticias/fb/2022/05/10/10-mai-2022---principe-charles-olha-para-a-coroa-imperial-do-estado-enquanto-faz-o-discurso-da-rainha-na-camara-dos-lordes-em-londres-reino-unido-1652186106605_v2_615x300.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Gabigol pode desfalcar o Flamengo na provável final da Libertadores; entenda - Flamengo - Mundo Rubro Negro</h5>
-                                <p class="card-text">Sim, o Flamengo está com um pé e meio na grande decisão da Copa Libertadores que acontecerá no dia 29 de outubro, em Guayaquil no Equador</p>
-                                <a target="_blank" href="https://mundorubronegro.com/flamengo/gabi-pode-desfalcar-o-flamengo-na-provavel-final-da-libertadores/" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Quando Charles vira rei? Entenda o plano de sucessão até a coroação - UOL</h5>
+                                <p class="card-text">Segundo os protocolos estabelecidos na "Operação London Bridge", plano de ação do Palácio de Buckingham após a morte da rainha Elizabeth 2ª, aos 96 anos, o conselho se reúne no dia D+1, no Palácio St. James, e proclama Charles como o novo rei.O dia da mor</p>
+                                <a target="_blank" href="https://noticias.uol.com.br/internacional/ultimas-noticias/2022/09/08/quando-charles-vira-rei-entenda-plano-de-sucessao-ate-coroacao.htm" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://s2.glbimg.com/1E5AV7ZTggzWlVntO1CM0HHx-6Y=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/1/M/eBpvvVRtSaII45IEBdYA/captura-de-tela-2022-09-01-150758.png" class="card-img-top" alt="loading...">
+                            <img src="https://i.ytimg.com/vi/d89bIm9c3-I/maxresdefault_live.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Argentina tem terceira morte por pneumonia de origem desconhecida e investiga quem foi o paciente zero - Globo</h5>
-                                <p class="card-text">O Ministério da Saúde descartou Covid, gripe e influenza como causas. A primeira hipótese é que a paciente zero se infectou depois de ser operada três vezes na vesícula.</p>
-                                <a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/01/argentina-tem-terceira-morte-por-pneumonia-de-origem-desconhecida.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">AO VIVO: Acompanhe a cobertura da morte da rainha Elizabeth II | CNN 360º - 08/09/2022 - CNN Brasil</h5>
+                                <p class="card-text">Assista,AO,<a target="_blank" href="https://www.youtube.com">VIVO</a>,ao,programa,CNN,360º,desta,quinta-feira,,8,de,setembro,de,2022,,apresentado,por,Daniela,Lima.Inscreva-se,no,canal,da,CNN,Brasil,no,YouTube.AC...</p>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=d89bIm9c3-I" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://jpimg.com.br/uploads/2022/09/titanic-em-8k.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://bolavip.com/__export/1662647793929/sites/bolavip/img/2022/09/08/capa_3.jpg_242310155.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Imagens em 8K do Titanic mostram detalhes nunca vistos da embarcação; confira - Jovem Pan</h5>
-                                <p class="card-text">A Ocean Gate Expeditions, uma empresa marítima que atua no Atlântico Norte, local em que o RSM Titanic naufragou, divulgou na quarta-feira, 31, imagens em 8K da embarcação que possibilitam analisar detalhes nunca vistos. Essa é a primeira vez que vídeos são g…</p>
-                                <a target="_blank" href="https://jovempan.com.br/noticias/mundo/imagens-em-8k-do-titanic-mostram-detalhes-nunca-vistos-da-embarcacao-confira.html" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Flamengo e Athletico na decisão: Veja o ranking das equipes com mais finais de Libertadores - Bolavip Brasil</h5>
+                                <p class="card-text">Flamengo e Athletico farão final brasileira</p>
+                                <a target="_blank" href="https://br.bolavip.com/flamengo/Flamengo-e-Athletico-na-decisao-Veja-o-ranking-das-equipes-com-mais-finais-de-Libertadores-20220908-0053.html" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="null" class="card-img-top" alt="loading...">
+                            <img src="https://s2.glbimg.com/OJ-d4wVqwEN9m6kw-OD8DgO8YSQ=/1200x/smart/filters:cover():strip_icc()/s02.video.glbimg.com/x720/10920325.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Governo do DF avalia mansão de ex-mulher de Bolsonaro em R$ 1,4 milhão | Boletim Metrópoles 1º - Metrópoles</h5>
-                                <p class="card-text">null</p>
-                                <a target="_blank" href="https://www.youtube.com/supported_browsers?next_url=https:%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DuwXIXo4eMPw" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Rainha Elizabeth II, a monarca britânica mais longeva da história, morre aos 96 anos - Globo</h5>
+                                <p class="card-text">Monarca estava em sua residência de férias, o Castelo de Balmoral, na Escócia. Ela passou 70 anos no trono, atravessou crises e guerras e virou ícone pop.</p>
+                                <a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/08/rainha-elizabeth-ii-morre-aos-96-anos.ghtml" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://cdn.meutimao.com.br/_upload/noticia-share/twitter/2022/09/01/dia-especial-jogadores-do-corinthians-parabenizam-o-clube_853b2e4.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://conteudo.imguol.com.br/c/esporte/e4/2022/09/08/selecao-brasileira-comemora-ponto-contra-a-argentina-nas-quartas-de-final-do-mundial-de-volei-masculino-1662653497915_v2_615x300.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Jogadores do Corinthians parabenizam o clube por aniversário de 112 anos nas redes; veja publicações - Meu Timão</h5>
-                                <p class="card-text">Nesta quinta-feira, o Corinthians completa 112 anos de história. Ao longo do dia, atletas que integram o atual elenco parabenizaram o clube nas redes sociais</p>
-                                <a target="_blank" href="https://www.meutimao.com.br/noticias-do-corinthians/426739/jogadores-do-corinthians-parabenizam-o-clube-por-aniversario-de-112-anos-nas-redes-veja-publicacoes" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Brasil se vinga da Argentina e vai às semifinais do Mundial de vôlei - UOL</h5>
+                                <p class="card-text">O Brasil está nas semifinais do Mundial masculino de vôlei. A vaga foi conquistada na tarde de hoje (8) após vitória por 3 sets a 1 (25-16, 23-25, 25-22 e 25-21) sobre a Argentina, em jogo tenso disputado na Polônia.A seleção brasileira agora aguarda o co</p>
+                                <a target="_blank" href="https://www.uol.com.br/esporte/ultimas-noticias/2022/09/08/brasil-x-argentina-quartas-de-final-mundial-volei.htm" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://s2.glbimg.com/nSPOsp3eBO2t2nn-F-JJdSgo8cg=/1200x/smart/filters:cover():strip_icc()/s03.video.glbimg.com/x720/10758346.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://i.em.com.br/F77a6B6AjZM7Pnp0fcJyUZ36Ilc=/600x315/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/09/08/1392189/na-foto-nina-sentada-entre-diversos-livros_1_90536.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Governo pode prorrogar estado de calamidade para manter Auxílio de R$ 600 em 2023, diz Guedes - Globo</h5>
-                                <p class="card-text">Estado de calamidade devido à alta dos combustíveis foi saída encontrada pelo governo e pelo Congresso para criar um pacote de benefícios em ano eleitoral, o que é proibido por lei.</p>
-                                <a target="_blank" href="https://g1.globo.com/politica/noticia/2022/09/01/guedes-diz-que-governo-pode-prorrogar-estado-de-calamidade-para-pagar-auxilio-de-brasil-de-r-600-em-2023.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Menina de 4 anos está entre os 12 jovens mineiros com alto QI - Estado de Minas</h5>
+                                <p class="card-text">Moradora de Nova Lima, Nina Christo Bianchetti já estava completamente alfabetizada aos dois anos e já leu mais de 100 livros</p>
+                                <a target="_blank" href="https://www.em.com.br/app/noticia/gerais/2022/09/08/interna_gerais,1392189/menina-de-4-anos-esta-entre-os-12-jovens-mineiros-com-alto-qi.shtml" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://s2.glbimg.com/_aMA5FNM1TPVQ13c_zIWf4xl0iA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/B/Q/jRJAioSzqrjiB4qbBQHA/whatsapp-image-2022-08-31-at-22.40.44.jpeg" class="card-img-top" alt="loading...">
+                            <img src="https://s2.glbimg.com/HjxG6kjsI5aBW6jREuwwyyIkWCc=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/M/8/qLU5HTQg6Hz723Onsohw/52334440168-ae0a733208-k.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">"Falo da Ponte por todo lugar": como uma banda sueca foi ao Majestoso ver jogo contra o Bahia - Globo</h5>
-                                <p class="card-text">Integrantes da Avatar "estrearam" em um estádio para acompanhar uma partida de futebol</p>
-                                <a target="_blank" href="https://ge.globo.com/sp/campinas-e-regiao/futebol/times/ponte-preta/noticia/2022/09/01/uma-honra-estar-aqui-banda-sueca-vibra-com-milesima-vitoria-da-ponte-preta-no-majestoso.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Cruzeiro divulga parcial de mais de 50 mil ingressos vendidos para jogo contra o Operário-PR - Globo</h5>
+                                <p class="card-text">Pelo segundo jogo seguido, time mineiro terá mais de 50 mil pessoas no estádio</p>
+                                <a target="_blank" href="https://ge.globo.com/futebol/times/cruzeiro/noticia/2022/09/08/cruzeiro-divulga-parcial-de-mais-de-50-mil-ingressos-vendidos-para-jogo-contra-o-operario-pr.ghtml" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="null" class="card-img-top" alt="loading...">
+                            <img src="https://www.infomoney.com.br/wp-content/uploads/2022/09/7-de-setembro_mcamgo_abr_070920221818-3.jpg?quality=70" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Taiwan derruba drone civil e aumenta tensões com a China - Estadão</h5>
-                                <p class="card-text">null</p>
-                                <a target="_blank" href="https://news.google.com/__i/rss/rd/articles/CBMiYmh0dHBzOi8vd3d3LmVzdGFkYW8uY29tLmJyL2ludGVybmFjaW9uYWwvdGFpd2FuLWRlcnJ1YmEtZHJvbmUtY2l2aWwtZS1hdW1lbnRhLXRlbnNvZXMtY29tLWEtY2hpbmEv0gEA?oc=5" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Bolsonaro expõe primeira-dama no 7 de Setembro e pode dificultar conquista de novos votos entre as mulheres, maioria do eleitorado - InfoMoney</h5>
+                                <p class="card-text">Falas do presidente agradam apoiadores, mas o afastam de conquistar votos importantes das mulheres fora de sua base, dizem cientistas políticos</p>
+                                <a target="_blank" href="https://www.infomoney.com.br/politica/bolsonaro-expoe-primeira-dama-no-7-de-setembro-e-pode-dificultar-conquista-de-novos-votos-entre-as-mulheres-maioria-do-eleitorado/" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://i.ytimg.com/vi/9lL539PMwLs/maxresdefault.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://static.poder360.com.br/2022/09/ato-esplanada-dos-ministerios-7-de-setembro-jair-bolsonaro-luciano-hang-michelle-bolsonaro-7.set_.2022-26.png" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">BOLSONARO SE PRONUNCIA APÓS ESCÂNDALO DOS IMÓVEIS COMPRADOS EM DINHEIRO VIVO: "O QUE TENHO A VER?" - TV Afiada</h5>
-                                <p class="card-text">Durante entrevista para Jovem Pan News, o presidente Jair Bolsonaro falou sobre as acusações que envolveram sua família nos últimos dias envolvendo aquisiçõe...</p>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=9lL539PMwLs" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">PDT pede inelegibilidade de Bolsonaro por ato no 7 de Setembro - Poder360</h5>
+                                <p class="card-text">Partido diz que houve abuso de poder político e econômico pela participação do presidente em ato</p>
+                                <a target="_blank" href="https://www.poder360.com.br/justica/pdt-pede-inelegibilidade-de-bolsonaro-por-ato-no-7-de-setembro/" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://s2.glbimg.com/jY-ruzPVgkjAMIiqXlqP4l1XPxk=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/9/2/AfLRycR8q2zwo8ySmTMw/marlene-engelhorn.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://tm.ibxk.com.br/2022/09/08/08120920542129.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Herdeira da Basf nega que rejeitará fortuna da família e explica que intenção é 'redistribuir' valor por meio de impostos - Globo</h5>
-                                <p class="card-text">Marlene Engelhorn, de 30 anos, quer redistribuir ao menos 90% do valor que recebrá, e não negá-lo.</p>
-                                <a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/01/herdeira-da-basf-nega-que-va-rejeitar-fortuna-da-familia.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">iPhone 14 sem bandeja de chip: dá para importar e usar no Brasil? - TecMundo</h5>
+                                <p class="card-text">Nos Estados Unidos, os novos aparelhos da Apple chegam às lojas sem a bandeja para chips SIM físicos</p>
+                                <a target="_blank" href="https://www.tecmundo.com.br/dispositivos-moveis/246327-iphone-14-bandeja-chip-importar-usar-brasil.htm" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://s2.glbimg.com/AkQiP2mhIDdCTQLd-lbet_o16I4=/1200x/smart/filters:cover():strip_icc()/s04.video.glbimg.com/x720/10883459.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://t2.tudocdn.net/638672?w=1920" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Eleitor que se recusar a entregar celular a mesário será impedido de votar, diz TSE - Globo</h5>
-                                <p class="card-text">Corte aprovou regras sobre aparelhos eletrônicos e porte de armas no dia da votação. Porte de armas poderá levar à prisão em flagrante.</p>
-                                <a target="_blank" href="https://g1.globo.com/politica/eleicoes/2022/noticia/2022/09/01/eleitor-que-se-recusar-a-entregar-celular-a-mesario-sera-impedido-de-votar-diz-tse.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">iPhone 14: filha de Steve Jobs faz piada sobre as mudanças no celular - TudoCelular.com</h5>
+                                <p class="card-text">Na última quarta (09), a Apple realizou seu aguardado evento para revelar novidades sobre a linha iPhone 14, assim como os novos AirPods e Apple Watch.</p>
+                                <a target="_blank" href="https://www.tudocelular.com/curiosidade/noticias/n195352/filha-steve-jobs-piada-iphone-14.html" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="null" class="card-img-top" alt="loading...">
+                            <img src="https://s2.glbimg.com/zl232WEVzMLyBo_oqU1qR-GoSbo=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/d/f/EEefmkR02odYzFChVYSw/g1-reporter2.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Ciro culpa Lula por repercussão negativa de frase sobre favela - CartaCapital</h5>
-                                <p class="card-text">null</p>
-                                <a target="_blank" href="https://news.google.com/__i/rss/rd/articles/CBMiaGh0dHBzOi8vd3d3LmNhcnRhY2FwaXRhbC5jb20uYnIvcG9saXRpY2EvY2lyby1jdWxwYS1sdWxhLXBvci1yZXBlcmN1c3Nhby1uZWdhdGl2YS1kZS1mcmFzZS1zb2JyZS1mYXZlbGEv0gEA?oc=5" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">'Foi só um beijinho no rosto. Não. Não foi', desabafa jornalista vítima de assédio; homem foi transferido para Benfica - Globo</h5>
+                                <p class="card-text">Oficial de Justiça Marcelo Benevides Silva teve prisão em flagrante convertida em preventiva. Jéssica Dias, vítima de assédio, se desculpou por não poder dar entrevistas e disse que vai se casar no sábado.</p>
+                                <a target="_blank" href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/09/08/foi-so-um-beijinho-no-rosto-nao-nao-foi-desabafa-jornalista-vitima-de-assedio.ghtml" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://img.r7.com/images/roberto-jefferson-01092022125854887?dimensions=100&" class="card-img-top" alt="loading...">
+                            <img src="https://s2.glbimg.com/x93w-5ZPDqUD_76TKgHlz_OdSeQ=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_b3309463db95468aa275bd532137e960/internal_photos/bs/2022/3/R/A4CzlGQ4ARMrP5tHndRQ/china-carnes.png" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">TSE anula candidatura de Roberto Jefferson ao Planalto - R7</h5>
-                                <p class="card-text">Medida foi tomada nesta quinta-feira (1º) por unanimidade. O presidente do PTB está em prisão domiciliar</p>
-                                <a target="_blank" href="http://noticias.r7.com/eleicoes-2022/tse-anula-candidatura-de-roberto-jefferson-ao-planalto-01092022" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">O boom chinês da carne bovina já passou? O alerta do Bradesco - Pipeline</h5>
+                                <p class="card-text">Relatório do analista Leandro Fontanesi vai na contramão do consenso de mercado e aponta riscos para frigoríficos brasileiros que dependem da China</p>
+                                <a target="_blank" href="https://pipelinevalor.globo.com/negocios/noticia/o-boom-chines-da-carne-bovina-ja-passou-o-alerta-do-bradesco.ghtml" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://s2.glbimg.com/sucQz8V6Nh2Wp7RNfxP684rtztA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/D/x/zElu5ETvWbDiZrzPukaw/webb-takes-its-first-exoplanet-image.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://bolavip.com/__export/1662645216938/sites/bolavip/img/2022/09/08/capa_x3x.jpg_242310155.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">James Webb: supertelescópio divulga sua primeira imagem de um planeta fora do Sistema Solar - Globo</h5>
-                                <p class="card-text">As fotos foram capturadas por quatro filtros do observatório e destacam as características do exoplaneta HIP 65426 b, um gigante com cerca de oito vezes a massa de Júpiter.</p>
-                                <a target="_blank" href="https://g1.globo.com/ciencia/noticia/2022/09/01/james-webb-supertelescopio-divulga-sua-primeira-imagem-de-um-planeta-fora-do-sistema-solar.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Pantanal: Após fim de Roberto, Tenório toma atitude inesperada e torna fazenda em cemitério de serpentes: “... - Bolavip Brasil</h5>
+                                <p class="card-text">Grileiro não aceitará a morte do filho e exigirá atitude de Solano</p>
+                                <a target="_blank" href="https://br.bolavip.com/entretenimento/-Pantanal-Apos-fim-de-Roberto-Tenorio-toma-atitude-inesperada-e-torna-fazenda-em-cemiterio-de-serpentes-Abrir-o-bucho-de-cada-sucuri-20220908-0055.html" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://s2.glbimg.com/dNmDiybC0b-6hNpYj-ZIz7YJv5c=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/7/W/KBRuybSseuTjHauEctYA/whatsapp-image-2022-09-01-at-12.46.49.jpeg" class="card-img-top" alt="loading...">
+                            <img src="https://s2.glbimg.com/9Ng_AccfkZCzQU4rSELYL-nKk24=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/r/M/xfGXC0R6mdrrlALZpKmQ/2022-09-08t100031z-1360067533-rc28hv9t9zb4-rtrmadp-3-usa-bannon.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Júri simbólico do Tribunal Permanente dos Povos condena Bolsonaro por crimes contra a humanidade durante a pandemia - Globo</h5>
-                                <p class="card-text">Atuação do TPP não tem atribuição para aplicar penas, mas alerta comunidade internacional e pode informar comissões jurídicas e cortes internacionais sobre a postura do presidente brasileiro frente às mortes por Covid-19 no Brasil.</p>
-                                <a target="_blank" href="https://g1.globo.com/sp/sao-paulo/noticia/2022/09/01/juri-simbolico-do-tribunal-permanente-dos-povos-condena-bolsonaro-por-crimes-contra-a-humanidade-durante-a-pandemia.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Steve Bannon se entrega em Nova York - Globo.com</h5>
+                                <p class="card-text">Ex-assessor de Donald Trump é acusado de desviar dinheiro de fundo arrecadado para construir um muro na fronteira com o México.</p>
+                                <a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/08/steve-bannon-se-entrega-em-nova-york.ghtml" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://forbes.com.br/wp-content/uploads/2022/08/Abertura-da-Bolsa_Money-1-1024x683.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://odia.ig.com.br/_midias/jpg/2022/09/08/1200x750/1_simony_fala_sobre_perda_dos_cabelos-26357249.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Ibovespa abre em alta após PIB avançar no segundo trimestre - Forbes Brasil</h5>
-                                <p class="card-text">Depois de fechar em queda de 0,82% na véspera e encerrar o mês de agosto com valorização de 6,16%, o Ibovespa iniciou a sessão de hoje (1º) em alta de 0,33%, aos 109.885 pontos.</p>
-                                <a target="_blank" href="https://forbes.com.br/forbes-money/2022/09/ibovespa-abre-em-alta-apos-pib-avancar-no-segundo-trimestre/" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Simony fala sobre perda de cabelos durante tratamento contra câncer: 'Triste ver caindo' - O Dia</h5>
+                                <p class="card-text">Cantora, que realiza sessões de quimioterapia, comentou a respeito do uso de perucas e lenços para enfrentar esse momento difícil</p>
+                                <a target="_blank" href="https://odia.ig.com.br/diversao/celebridades/2022/09/6481097-simony-fala-sobre-perda-de-cabelos-durante-tratamento-contra-cancer-triste-ver-caindo.html" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://s2.glbimg.com/urMXw1U94G7AqBWHcs4fxI_WbQ0=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/u/8/mX4YHxQamYxmZ899FamQ/2016-06-06-iphone-6.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://i.em.com.br/oJiJdNowbKcgu__foT_GVEu8Cio=/600x315/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/09/08/1392146/jair-bolsonaro-com-maos-no-rosto_1_43432.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">iPhone 6 e iPhone 5S recebem rara correção de segurança - TechTudo</h5>
-                                <p class="card-text">Imprensa dos Estados Unidos afirma que brecha pode ser ‘grave’, já que exigiu uma movimentação atípica da empresa. Donos de iPhones mais recentes também precisam atualizar o iOS.</p>
-                                <a target="_blank" href="https://www.techtudo.com.br/noticias/2022/09/iphone-6-e-iphone-5s-recebem-importante-correcao-de-seguranca.ghtml" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Bolsonaro cancela ida à Cerimônia do Congresso em homenagem ao bicentenário - Estado de Minas</h5>
+                                <p class="card-text">Evento começou às 10h; outras autoridades políticas vão participar do evento</p>
+                                <a target="_blank" href="https://www.em.com.br/app/noticia/politica/2022/09/08/interna_politica,1392146/bolsonaro-cancela-ida-a-cerimonia-do-congresso-em-homenagem-ao-bicentenario.shtml" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://www.infomoney.com.br/wp-content/uploads/2019/06/urna-eletronica-1.jpg?quality=70" class="card-img-top" alt="loading...">
+                            <img src="https://www.infomoney.com.br/wp-content/uploads/2019/06/bce.jpg?quality=70" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Pesquisa Modal/Futura mostra empate técnico entre Bolsonaro e Lula na corrida presidencial - InfoMoney</h5>
-                                <p class="card-text">Os resultados desta pesquisa divergem do que indicam Ipec, Ipespe, Quaest, MDA e Datafolha em seus levantamentos</p>
-                                <a target="_blank" href="https://www.infomoney.com.br/politica/pesquisa-modal-futura-mostra-empate-tecnico-entre-bolsonaro-e-lula-na-corrida-presidencial/" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">BCE promove alta sem precedentes dos juros, de 0,75 ponto percentual - InfoMoney</h5>
+                                <p class="card-text">“Ao longo das próximas reuniões, o Conselho do BCE espera aumentar ainda mais as taxas de juros", apontou a autoridade monetária</p>
+                                <a target="_blank" href="https://www.infomoney.com.br/economia/bce-promove-alta-sem-precedentes-dos-juros-de-075-ponto-percentual/" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
         
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
                         <article class="card">
-                            <img src="https://windowsclub.com.br/wp-content/uploads/2022/01/activision-blizzard.jpg" class="card-img-top" alt="loading...">
+                            <img src="https://jpimg.com.br/uploads/2022/09/fup202209071014-1024x683.jpg" class="card-img-top" alt="loading...">
                             <div class="card-body">
-                                <h5 class="card-title">Call of Duty estará no Xbox Game Pass com Overwatch, Diablo e outros jogos da Activision Blizzard - Windows Club - Windows Club</h5>
-                                <p class="card-text">Phil Spencer, chefe do Xbox e Microsoft Gaming, escreveu uma nova carta para reiterar as intenções da Microsoft com a […]</p>
-                                <a target="_blank" href="https://windowsclub.com.br/call-of-duty-estara-no-xbox-game-pass-com-overwatch-diablo-e-outros-jogos-da-activision-blizzard/" class="btn btn-secondary">Continue lendo</a>
+                                <h5 class="card-title">Enfermeiros protestam contra decisão de Barroso que suspendeu piso salarial da categoria - Jovem Pan</h5>
+                                <p class="card-text">Em meio a uma esplanada pintada de verde e amarelo, uma multidão de branco ganhou destaque. Os profissionais de enfermagem usaram faixas e cartazes, pedindo o fim da suspensão do piso salarial da categoria determinado de maneira monocrática e provisória pelo …</p>
+                                <a target="_blank" href="https://jovempan.com.br/programas/jornal-da-manha/enfermeiros-protestam-contra-decisao-de-barroso-que-suspendeu-piso-salarial-da-categoria.html" class="btn btn-secondary">Continue lendo</a>
                             </div>
                         </article>
                     </div>
