@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,10 +10,26 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </head>
     <style>
-        
+
         .container-fluid {
             padding-left: 0;
             padding-right: 0;
+        }
+
+        /*.tamanho-card {
+            height: 500px;
+        }*/
+
+        .imagem-card {
+            object-fit: cover;
+        }
+
+        .texto-card {
+            text-overflow: ellipsis;
+        }
+
+        .texto-titulo-card {
+            text-overflow: ellipsis;
         }
 
         .blog-header-logo {
@@ -78,7 +95,19 @@
             color: #FFFFFF;
         }
     </style>
-    <body class="bg-color">
+    <script>
+
+        function myFunction() {
+            const ultimoAd = document.getElementById("ultimoAd");
+        
+            const sticky = ultimoAd.offsetTop;
+
+            if (window.pageYOffset >= sticky) {
+                console.log(sticky);
+            }
+        }
+    </script>
+    <body class="bg-color" onscroll="myFunction()">
         <div class="container-fluid">
 
             <header>
@@ -90,206 +119,480 @@
                     </div>
                 </nav>
             </header>
+
             
-            <main>
-                <div class="row justify-content-center mt-4">
+        <main class="row justify-content-center mt-4">
 
-                    <div class="col-12 mb-4">
-                        <div class="caroucel-center justify-content-center">
-                            <div id="carouselExampleIndicators"  class="carousel slide col-10 d-flex center-block" data-bs-ride="true">
-                                <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="col-12 mb-4">
+                <div class="caroucel-center justify-content-center">
+                    <div id="carouselExampleIndicators"  class="carousel slide col-10 d-flex center-block" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2022/09/27/675x450/1_doctor_hand_hold_and_offer_to_patient_medical_marijuana_and_oil-26514798.jpg?20220927144648?20220927144648" class="w-100 cr-img" alt="loading...">
+                                <div class="carousel-caption d-none d-md-block bg-cr-color cr-item">
+                                    <h5>Idoso tem reversão de sintomas de Alzheimer com óleo de cannabis - Correio Braziliense</h5>
+                                    <p>Delci Ruver, de 78 anos, participou de estudo da Universidade Federal da Integração Latino-Americana (Unila), no Paraná. Os resultados foram observados após 22 meses de acompanhamento</p>
+                                    <a target="_blank" href="https://www.correiobraziliense.com.br/ciencia-e-saude/2022/09/5039846-idoso-tem-reversao-de-sintomas-de-alzheimer-com-oleo-de-cannabis.html" class="btn btn-light">Continue lendo</a>
                                 </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="https://seucreditodigital.com.br/wp-content/uploads/2022/09/preco-da-cesta-basica-cai-na-maioria-das-capitais-pesquisadas.jpg" class="w-100 cr-img" alt="loading...">
-                                        <div class="carousel-caption d-none d-md-block bg-cr-color cr-item">
-                                            <h5>Preço da cesta básica cai na maioria das capitais pesquisadas - Seu Crédito Digital</h5>
-                                            <p>O preço da cesta básica registrou baixa em diversas capitais brasileiras no mês de agosto, segundo o Dieese</p>
-                                            <a target="_blank" href="https://seucreditodigital.com.br/preco-da-cesta-basica-cai-na-maioria-das-capitais-pesquisadas/" class="btn btn-light">Continue lendo</a>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://conteudo.imguol.com.br/c/noticias/fb/2022/05/10/10-mai-2022---principe-charles-olha-para-a-coroa-imperial-do-estado-enquanto-faz-o-discurso-da-rainha-na-camara-dos-lordes-em-londres-reino-unido-1652186106605_v2_615x300.jpg" class="w-100 cr-img" alt="loading...">
-                                        <div class="carousel-caption d-none d-md-block bg-cr-color">
-                                            <h5 class="">Quando Charles vira rei? Entenda o plano de sucessão até a coroação - UOL</h5>
-                                            <p class="">Segundo os protocolos estabelecidos na "Operação London Bridge", plano de ação do Palácio de Buckingham após a morte da rainha Elizabeth 2ª, aos 96 anos, o conselho se reúne no dia D+1, no Palácio St. James, e proclama Charles como o novo rei.O dia da mor</p>
-                                            <a target="_blank" href="https://noticias.uol.com.br/internacional/ultimas-noticias/2022/09/08/quando-charles-vira-rei-entenda-plano-de-sucessao-ate-coroacao.htm" class="btn btn-light">Continue lendo</a>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://i.ytimg.com/vi/d89bIm9c3-I/maxresdefault_live.jpg" class="w-100 cr-img" alt="loading...">
-                                        <div class="carousel-caption d-none d-md-block bg-cr-color">
-                                            <h5 class="">AO VIVO: Acompanhe a cobertura da morte da rainha Elizabeth II | CNN 360º - 08/09/2022 - CNN Brasil</h5>
-                                            <p class="">Assista,AO,<a target="_blank" href="https://www.youtube.com">VIVO</a>,ao,programa,CNN,360º,desta,quinta-feira,,8,de,setembro,de,2022,,apresentado,por,Daniela,Lima.Inscreva-se,no,canal,da,CNN,Brasil,no,YouTube.AC...</p>
-                                            <a target="_blank" href="https://www.youtube.com/watch?v=d89bIm9c3-I" class="btn btn-light">Continue lendo</a>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://s2.glbimg.com/SN_T3V43g11bPuEu2TmbP9tugQ8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/h/P/pXik2qTjqQrRTvjpJGMw/auxilio-brasil.jpg" class="w-100 cr-img" alt="loading...">
+                                <div class="carousel-caption d-none d-md-block bg-cr-color">
+                                    <h5>Empréstimo consignado com Auxílio Brasil: veja perguntas e respostas - Globo</h5>
+                                    <p>Portaria estabelece que o número máximo de parcelas será de 24, e a taxa de juros não poderá ser superior a 3,5% ao mês.</p>
+                                    <a target="_blank" href="https://g1.globo.com/economia/noticia/2022/09/27/emprestimo-consignado-com-auxilio-brasil-veja-perguntas-e-respostas.ghtml" class="btn btn-light">Continue lendo</a>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                                </button>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://conteudo.imguol.com.br/c/esporte/b2/2022/09/23/tite-durante-brasil-3-x-0-gana-1663965524997_v2_615x300.jpg" class="w-100 cr-img" alt="loading...">
+                                <div class="carousel-caption d-none d-md-block bg-cr-color">
+                                    <h5>Tite escala seleção com Fred e Neymar para último jogo antes da Copa - UOL Esporte</h5>
+                                    <p>Tite confirmou a escalação treinada nos dois últimos dias para o amistoso desta terça-feira da seleção brasileira. A partida contra a Tunísia começa às 15h30 (de Brasília), no estádio Parque dos Príncipes, em Paris, e é o último compromisso da equipe ante</p>
+                                    <a target="_blank" href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/09/27/tite-escala-selecao-com-fred-e-neymar-para-ultimo-jogo-antes-da-copa.htm" class="btn btn-light">Continue lendo</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-
-
-                    <div class="col-12 mb-4">
-                        <div class="d-flex w-100 justify-content-center">
-                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
-                            crossorigin="anonymous"></script>
-                            <!-- anuncio horizontal -->
-                            <ins class="adsbygoogle"
-                                style="display:block"
-                                data-ad-client="ca-pub-2772647875947546"
-                                data-ad-slot="9502323330"
-                                data-ad-format="auto"
-                                data-full-width-responsive="true">
-                            </ins>
-                            <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-1">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
-                        crossorigin="anonymous"></script>
-                        <!-- anuncio vertical -->
-                        <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-2772647875947546"
-                            data-ad-slot="8476429541"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true">
-                        </ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-
-                    <div class="col-sm-10">
-                        <section class="row justify-content-center">
-                            
-                            <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <article class="card bg-cards-color bd-color">
-                                    <img src="https://seucreditodigital.com.br/wp-content/uploads/2022/09/preco-da-cesta-basica-cai-na-maioria-das-capitais-pesquisadas.jpg" class="card-img-top" alt="loading...">
-                                    <div class="card-body">
-                                        <h5 class="card-title texto-titulo">Preço da cesta básica cai na maioria das capitais pesquisadas - Seu Crédito Digital</h5>
-                                        <p class="card-text texto-descricao">O preço da cesta básica registrou baixa em diversas capitais brasileiras no mês de agosto, segundo o Dieese</p>
-                                        <a target="_blank" href="https://seucreditodigital.com.br/preco-da-cesta-basica-cai-na-maioria-das-capitais-pesquisadas/" class="btn btn-light">Continue lendo</a>
-                                    </div>
-                                </article>
-                            </div>
-                
-                            <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <article class="card bg-cards-color bd-color">
-                                    <img src="https://conteudo.imguol.com.br/c/noticias/fb/2022/05/10/10-mai-2022---principe-charles-olha-para-a-coroa-imperial-do-estado-enquanto-faz-o-discurso-da-rainha-na-camara-dos-lordes-em-londres-reino-unido-1652186106605_v2_615x300.jpg" class="card-img-top" alt="loading...">
-                                    <div class="card-body">
-                                        <h5 class="card-title texto-titulo">Quando Charles vira rei? Entenda o plano de sucessão até a coroação - UOL</h5>
-                                        <p class="card-text texto-descricao">Segundo os protocolos estabelecidos na "Operação London Bridge", plano de ação do Palácio de Buckingham após a morte da rainha Elizabeth 2ª, aos 96 anos, o conselho se reúne no dia D+1, no Palácio St. James, e proclama Charles como o novo rei.O dia da mor</p>
-                                        <a target="_blank" href="https://noticias.uol.com.br/internacional/ultimas-noticias/2022/09/08/quando-charles-vira-rei-entenda-plano-de-sucessao-ate-coroacao.htm" class="btn btn-light">Continue lendo</a>
-                                    </div>
-                                </article>
-                            </div>
-                
-                            <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <article class="card bg-cards-color bd-color">
-                                    <img src="https://i.ytimg.com/vi/d89bIm9c3-I/maxresdefault_live.jpg" class="card-img-top" alt="loading...">
-                                    <div class="card-body">
-                                        <h5 class="card-title texto-titulo">AO VIVO: Acompanhe a cobertura da morte da rainha Elizabeth II | CNN 360º - 08/09/2022 - CNN Brasil</h5>
-                                        <p class="card-text texto-descricao">Assista,AO,<a target="_blank" href="https://www.youtube.com">VIVO</a>,ao,programa,CNN,360º,desta,quinta-feira,,8,de,setembro,de,2022,,apresentado,por,Daniela,Lima.Inscreva-se,no,canal,da,CNN,Brasil,no,YouTube.AC...</p>
-                                        <a target="_blank" href="https://www.youtube.com/watch?v=d89bIm9c3-I" class="btn btn-light">Continue lendo</a>
-                                    </div>
-                                </article>
-                            </div>
-                
-                            <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <article class="card bg-cards-color bd-color">
-                                    <img src="https://bolavip.com/__export/1662647793929/sites/bolavip/img/2022/09/08/capa_3.jpg_242310155.jpg" class="card-img-top" alt="loading...">
-                                    <div class="card-body">
-                                        <h5 class="card-title texto-titulo">Flamengo e Athletico na decisão: Veja o ranking das equipes com mais finais de Libertadores - Bolavip Brasil</h5>
-                                        <p class="card-text texto-descricao">Flamengo e Athletico farão final brasileira</p>
-                                        <a target="_blank" href="https://br.bolavip.com/flamengo/Flamengo-e-Athletico-na-decisao-Veja-o-ranking-das-equipes-com-mais-finais-de-Libertadores-20220908-0053.html" class="btn btn-light">Continue lendo</a>
-                                    </div>
-                                </article>
-                            </div>
-                
-                            <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <article class="card bg-cards-color bd-color">
-                                    <img src="https://s2.glbimg.com/OJ-d4wVqwEN9m6kw-OD8DgO8YSQ=/1200x/smart/filters:cover():strip_icc()/s02.video.glbimg.com/x720/10920325.jpg" class="card-img-top" alt="loading...">
-                                    <div class="card-body">
-                                        <h5 class="card-title texto-titulo">Rainha Elizabeth II, a monarca britânica mais longeva da história, morre aos 96 anos - Globo</h5>
-                                        <p class="card-text texto-descricao">Monarca estava em sua residência de férias, o Castelo de Balmoral, na Escócia. Ela passou 70 anos no trono, atravessou crises e guerras e virou ícone pop.</p>
-                                        <a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/08/rainha-elizabeth-ii-morre-aos-96-anos.ghtml" class="btn btn-light">Continue lendo</a>
-                                    </div>
-                                </article>
-                            </div>
-                
-                            <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <article class="card bg-cards-color bd-color">
-                                    <img src="https://conteudo.imguol.com.br/c/esporte/e4/2022/09/08/selecao-brasileira-comemora-ponto-contra-a-argentina-nas-quartas-de-final-do-mundial-de-volei-masculino-1662653497915_v2_615x300.jpg" class="card-img-top" alt="loading...">
-                                    <div class="card-body">
-                                        <h5 class="card-title texto-titulo">Brasil se vinga da Argentina e vai às semifinais do Mundial de vôlei - UOL</h5>
-                                        <p class="card-text texto-descricao">O Brasil está nas semifinais do Mundial masculino de vôlei. A vaga foi conquistada na tarde de hoje (8) após vitória por 3 sets a 1 (25-16, 23-25, 25-22 e 25-21) sobre a Argentina, em jogo tenso disputado na Polônia.A seleção brasileira agora aguarda o co</p>
-                                        <a target="_blank" href="https://www.uol.com.br/esporte/ultimas-noticias/2022/09/08/brasil-x-argentina-quartas-de-final-mundial-volei.htm" class="btn btn-light">Continue lendo</a>
-                                    </div>
-                                </article>
-                            </div>
-                
-                            <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <article class="card bg-cards-color bd-color">
-                                    <img src="https://i.em.com.br/F77a6B6AjZM7Pnp0fcJyUZ36Ilc=/600x315/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/09/08/1392189/na-foto-nina-sentada-entre-diversos-livros_1_90536.jpg" class="card-img-top" alt="loading...">
-                                    <div class="card-body">
-                                        <h5 class="card-title texto-titulo">Menina de 4 anos está entre os 12 jovens mineiros com alto QI - Estado de Minas</h5>
-                                        <p class="card-text texto-descricao">Moradora de Nova Lima, Nina Christo Bianchetti já estava completamente alfabetizada aos dois anos e já leu mais de 100 livros</p>
-                                        <a target="_blank" href="https://www.em.com.br/app/noticia/gerais/2022/09/08/interna_gerais,1392189/menina-de-4-anos-esta-entre-os-12-jovens-mineiros-com-alto-qi.shtml" class="btn btn-light">Continue lendo</a>
-                                    </div>
-                                </article>
-                            </div>
-                
-                            <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <article class="card bg-cards-color bd-color">
-                                    <img src="https://s2.glbimg.com/HjxG6kjsI5aBW6jREuwwyyIkWCc=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/M/8/qLU5HTQg6Hz723Onsohw/52334440168-ae0a733208-k.jpg" class="card-img-top" alt="loading...">
-                                    <div class="card-body">
-                                        <h5 class="card-title texto-titulo">Cruzeiro divulga parcial de mais de 50 mil ingressos vendidos para jogo contra o Operário-PR - Globo</h5>
-                                        <p class="card-text texto-descricao">Pelo segundo jogo seguido, time mineiro terá mais de 50 mil pessoas no estádio</p>
-                                        <a target="_blank" href="https://ge.globo.com/futebol/times/cruzeiro/noticia/2022/09/08/cruzeiro-divulga-parcial-de-mais-de-50-mil-ingressos-vendidos-para-jogo-contra-o-operario-pr.ghtml" class="btn btn-light">Continue lendo</a>
-                                    </div>
-                                </article>
-                            </div>
-                
-                        </section>
-                    </div>
-
-                    <div class="col-sm-1">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
-                        crossorigin="anonymous"></script>
-                        <!-- anuncio vertical -->
-                        <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-2772647875947546"
-                            data-ad-slot="8476429541"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true">
-                        </ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
+            </div>
 
-            </main>
+
+            <div class="col-12 mb-4">
+                <div class="d-flex w-100 justify-content-center">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
+                    crossorigin="anonymous"></script>
+                    <!-- anuncio horizontal -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-2772647875947546"
+                        data-ad-slot="9502323330"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true">
+                    </ins>
+                    <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <div class="col-sm-1">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
+                crossorigin="anonymous"></script>
+                <!-- anuncio vertical -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-2772647875947546"
+                    data-ad-slot="8476429541"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <div class="col-sm-10">
+                <section class="row justify-content-center">
+                    
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2022/09/27/675x450/1_doctor_hand_hold_and_offer_to_patient_medical_marijuana_and_oil-26514798.jpg?20220927144648?20220927144648" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Idoso tem reversão de sintomas de Alzheimer com óleo de cannabis - Correio Braziliense</h5>
+                                <p class="card-text texto-card texto-descricao">Delci Ruver, de 78 anos, participou de estudo da Universidade Federal da Integração Latino-Americana (Unila), no Paraná. Os resultados foram observados após 22 meses de acompanhamento</p>
+                                <a target="_blank" href="https://www.correiobraziliense.com.br/ciencia-e-saude/2022/09/5039846-idoso-tem-reversao-de-sintomas-de-alzheimer-com-oleo-de-cannabis.html" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
         
-        </div>
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/SN_T3V43g11bPuEu2TmbP9tugQ8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/h/P/pXik2qTjqQrRTvjpJGMw/auxilio-brasil.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Empréstimo consignado com Auxílio Brasil: veja perguntas e respostas - Globo</h5>
+                                <p class="card-text texto-card texto-descricao">Portaria estabelece que o número máximo de parcelas será de 24, e a taxa de juros não poderá ser superior a 3,5% ao mês.</p>
+                                <a target="_blank" href="https://g1.globo.com/economia/noticia/2022/09/27/emprestimo-consignado-com-auxilio-brasil-veja-perguntas-e-respostas.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://conteudo.imguol.com.br/c/esporte/b2/2022/09/23/tite-durante-brasil-3-x-0-gana-1663965524997_v2_615x300.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Tite escala seleção com Fred e Neymar para último jogo antes da Copa - UOL Esporte</h5>
+                                <p class="card-text texto-card texto-descricao">Tite confirmou a escalação treinada nos dois últimos dias para o amistoso desta terça-feira da seleção brasileira. A partida contra a Tunísia começa às 15h30 (de Brasília), no estádio Parque dos Príncipes, em Paris, e é o último compromisso da equipe ante</p>
+                                <a target="_blank" href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/09/27/tite-escala-selecao-com-fred-e-neymar-para-ultimo-jogo-antes-da-copa.htm" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://publisher-publish.s3.eu-central-1.amazonaws.com/pb-brasil247/swp/jtjeq9/media/20220927130928_c9b0836a-40f3-4bda-8d8d-127e26a12589.png" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Em evento com atletas, Lula fala em fazer 'revolução' no esporte: 'precisamos mudar a visão dos governantes' - Brasil 247</h5>
+                                <p class="card-text texto-card texto-descricao">'Se o Estado não intervir, não acontecerá. Nenhum empresário, por mais avançado que seja, vai investir em um atleta antes de esse atleta provar que pode dar retorno', afirmou</p>
+                                <a target="_blank" href="https://www.brasil247.com/esporte/em-evento-com-atletas-lula-fala-em-fazer-revolucao-no-esporte-precisamos-mudar-visao-dos-governantes" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://conteudo.imguol.com.br/c/colunas/27/2022/09/27/tenorio-murilo-benicio-em-pantanal-1664255173995_v2_615x300.png" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Castração x estupro: o que mudou na cena de Tenório e Alcides em 'Pantanal' - UOL</h5>
+                                <p class="card-text texto-card texto-descricao">A reta final de Pantanal já está no ar e cenas aguardadas do remake também já estão sendo exibidas, como a vingança de Tenório (Murilo Benicio) contra Alcides (Juliano Cazarré).No capítulo de ontem, o latifundiário sequestrou Alcides e Maria (Isabel Teixe</p>
+                                <a target="_blank" href="https://www.uol.com.br/splash/noticias/2022/09/27/pantanal-2022-estupro-castracao-alcides.htm" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://ichef.bbci.co.uk/news/1024/branded_portuguese/5DB1/production/_126758932_bolsonaro-mayfair-02.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">'Vamos invadir Congresso e o STF': o que está por trás do disparo em massa de mensagens pró-Bolsonaro - BBC News Brasil</h5>
+                                <p class="card-text texto-card texto-descricao">Empresa que controla sistema que enviou SMS favorável ao presidente e ameaçando instituições disse não ter autorizado qualquer disparo e que atitude foi tomada isoladamente por um funcionário que agiu fora das normas.</p>
+                                <a target="_blank" href="https://www.bbc.com/portuguese/brasil-63041903" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://cdn.meutimao.com.br/_upload/noticia-share/twitter/2022/09/27/ingressos-disponiveis-corinthians-abre-venda-de-ingressos_eb7c46a.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Corinthians abre venda de ingressos para jogo contra Cuiabá pelo Brasileirão; veja preços - Meu Timão</h5>
+                                <p class="card-text texto-card texto-descricao">O Corinthians anunciou nesta terça-feira o começo da venda de ingressos para o duelo contra o Cuiabá, pela 29ª rodada do Campeonato Brasileiro, na Neo Química Arena.</p>
+                                <a target="_blank" href="https://www.meutimao.com.br/noticias-do-corinthians/429397/corinthians-abre-venda-de-ingressos-para-jogo-contra-cuiaba-pelo-brasileirao-veja-precos" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://i.em.com.br/J0MhbObk7DfajxNwF1S7e6heq-Q=/600x315/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/09/27/1398613/20220927120049669048u.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">'Feia e vulgar', diz Michelle Bolsonaro de Bruna Marquezine - Estado de Minas</h5>
+                                <p class="card-text texto-card texto-descricao">Comentário de primeira-dama sobre look usado pela atriz em desfile foi muito criticado na Web</p>
+                                <a target="_blank" href="https://www.em.com.br/app/noticia/diversidade/2022/09/27/noticia-diversidade,1398613/feia-e-vulgar-diz-michelle-bolsonaro-de-bruna-marquezine.shtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/i0cxQTsVOKzioT47B70N69j1hCU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/B/O/nBHBeBQC2InX3IkBkBlw/potm2209c.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">'Ossos cósmicos': James Webb revela detalhes inéditos da galáxia IC 5332 - Globo</h5>
+                                <p class="card-text texto-card texto-descricao">Estrutura em espiral está a 29 mil anos-luz de distância da Terra.</p>
+                                <a target="_blank" href="https://g1.globo.com/ciencia/noticia/2022/09/27/ossos-cosmicos-james-webb-revela-detalhes-ineditos-da-galaxia-ic-5332.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2022/09/21/675x450/1_jair_bolsonaro_e_lula_1_176390-26475866.jpg?20220921105634?20220921105634" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Pesquisa Atlas: Lula tem 48,3% das intenções de voto e Bolsonaro 41% - Correio Braziliense</h5>
+                                <p class="card-text texto-card texto-descricao">Em terceiro lugar está o candidato Ciro Gomes (PDT), com 3,5%, Simone Tebet (MDB) aparece na quarta posição, com 2,1%</p>
+                                <a target="_blank" href="https://www.correiobraziliense.com.br/politica/2022/09/5039792-pesquisa-atlas-lula-tem-483-das-intencoes-de-voto-e-bolsonaro-41.html" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://jpimg.com.br/uploads/2022/09/russos-fugindo-da-russia.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Cerca de 10 mil russos deixam o país por dia para não lutarem na guerra na Ucrânia - Jovem Pan</h5>
+                                <p class="card-text texto-card texto-descricao">Desde que o presidente da Rússia, Vladimir Putin, anunciou uma mobilização militas para enviar reforços para a Ucrânia, centenas de russos começaram a fugir no país para não irem para a guerra. As regiões fronteiriças, a qual eles não precisam de visto para e…</p>
+                                <a target="_blank" href="https://jovempan.com.br/noticias/mundo/cerca-de-10-mil-russos-deixam-o-pais-por-dia-para-nao-lutarem-na-guerra-na-ucrania.html" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/Z0z8hWrMSJ04khkWMFjuLeP5pCA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/A/S/Jd2wf6TCid3NfIy7rAmg/referendo-ap-soldado.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Rússia anuncia vitória em referendo em regiões ucranianas e já fala em anexação - Globo</h5>
+                                <p class="card-text texto-card texto-descricao">Primeira contagem, segundo Moscou, aponta que 96% dos votantes escolheram separação da Ucrânia. Consulta pública, anunciada e realizada pela Rússia, foi feita em Zaporizhzhia, Donetsk, Luhansk e Kherson, mas é contestada por Kiev, que aponta 'farsa'.</p>
+                                <a target="_blank" href="https://g1.globo.com/mundo/ucrania-russia/noticia/2022/09/27/esperado-resultado-parcial-dos-referendos-regioes-ucranianas-indicam-anexacao-a-russia.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://media.hugogloss.uol.com.br/uploads/2022/09/hailey-bieber-justin-bieber-selena-gomez.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Hailey Bieber quebra o silêncio sobre alegações de que teria se envolvido com Justin, enquanto ele estava com Selena; assista - Hugo Gloss</h5>
+                                <p class="card-text texto-card texto-descricao">Em participação no podcast "Call Her Daddy", a modelo compartilhou novos detalhes sensíveis sobre a linha do tempo e as pressões de seu casamento com Justin Bieber</p>
+                                <a target="_blank" href="https://hugogloss.uol.com.br/famosos/hailey-bieber-quebra-o-silencio-sobre-alegacoes-de-que-teria-se-envolvido-com-justin-enquanto-ele-estava-com-selena-assista/" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/ZStr7MkQNqXVQhne9ia3e7Cwy2o=/1200x/smart/filters:cover():strip_icc()/s01.video.glbimg.com/x720/10969600.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Vídeo mostra bolhas de gás subindo de vazamentos no gasoduto Nord Stream no mar Báltico - Globo</h5>
+                                <p class="card-text texto-card texto-descricao">A Europa está correndo para investigar possíveis sabotagens por trás dos vazamentos. Nenhum dos gasodutos estava enviando gás para a Europa no momento.</p>
+                                <a target="_blank" href="https://g1.globo.com/mundo/ucrania-russia/noticia/2022/09/27/video-mostra-bolhas-de-gas-subindo-de-vazamentos-no-gasoduto-nord-stream-no-mar-baltico.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/D-yMcXgH3xDOlQext3mmjb0Fqvc=/1200x/smart/filters:cover():strip_icc()/s04.video.glbimg.com/x720/10969643.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Gasolina cai, diesel nem tanto: veja maiores altas e quedas de preços em setembro e no acumulado em 12 meses - Globo</h5>
+                                <p class="card-text texto-card texto-descricao">No acumulado em 12 meses, litro do diesel tem alta de quase 50%, segundo dados do IPCA-15.</p>
+                                <a target="_blank" href="https://g1.globo.com/economia/noticia/2022/09/27/gasolina-cai-diesel-nem-tanto-veja-maiores-altas-e-quedas-de-precos-em-setembro-e-no-acumulado-em-12-meses.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://conteudo.imguol.com.br/c/noticias/45/2022/09/25/aeronave-viajara-a-cerca-de-seis-quilometros-por-segundo-em-direcao-ao-meteoro-dimorphos-pequena-lua-de-160-metros-de-diametro-que-ronda-o-sistema-solar-1664144722577_v2_615x300.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Dart: veja o momento em que nave da Nasa colide com asteroide Dimorphos - Tilt</h5>
+                                <p class="card-text texto-card texto-descricao">A Nasa realizou ontem (26) com sucesso uma etapa crucial da missão Dart (Double Asteroid Redirect Mission): a agência espacial dos Estados Unidos colidiu (de propósito) uma nave espacial em um asteroide a 22.000 km/h.A missão suicida teve como alvo o aste</p>
+                                <a target="_blank" href="https://www.uol.com.br/tilt/noticias/redacao/2022/09/27/dart-veja-momento-em-que-nave-da-nasa-colide-com-asteroide-dimorphos.htm" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://www.opovo.com.br/_midias/jpg/2022/09/27/818x460/1_pcce_-19798936.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Homem gritava vamos ver quem é eleitor de Lula enquanto esfaqueava vítima - O POVO</h5>
+                                <p class="card-text texto-card texto-descricao">Conforme O POVO apurou, testemunhas disseram que Edmilson Freire da Silva, que deve passar por audiência de custódia nesta terça-feira, 27, gritava enquanto esfaqueava a vítima</p>
+                                <a target="_blank" href="https://www.opovo.com.br/noticias/ceara/cascavel/2022/09/27/homem-gritava-vamos-ver-quem-e-eleitor-de-lula-enquanto-esfaqueava-vitima.html" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://bolavip.com/__export/1664242888913/sites/bolavip/img/2022/09/26/52377786945_6a12493ef3_k_crop1664242869150.jpg_242310155.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Orlando Ribeiro aproveita a ‘brecha’ e chama atenção com novo quarteto titular do Santos contra o Athletico-PR - Bolavip Brasil</h5>
+                                <p class="card-text texto-card texto-descricao">Peixe vai ter mudanças na próxima rodada do Brasileirão; Soteldo e mais um estão fora</p>
+                                <a target="_blank" href="https://br.bolavip.com/santos/Orlando-Ribeiro-aproveita-a-brecha-e-chama-atencao-com-novo-quarteto-titular-do-Santos-contra-o-Athletico-PR-20220926-0155.html" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://images.jota.info/wp-content/uploads/2022/09/urnaeletronica.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Quem são os candidatos a deputado federal em 2022 - JOTA</h5>
+                                <p class="card-text texto-card texto-descricao">Conheça o perfil dos candidatos à Câmara dos Deputados em 2022, seus números de urna e quanto receberam para fazer campanha</p>
+                                <a target="_blank" href="https://www.jota.info/eleicoes/quem-sao-os-candidatos-a-deputado-federal-em-2022-27092022" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://www.infomoney.com.br/wp-content/uploads/2021/11/DSC_2777.jpg?quality=70" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Ibovespa Futuro acompanha recuperação em Nova York e abre em alta - InfoMoney</h5>
+                                <p class="card-text texto-card texto-descricao">Após divulgação de indicadores domésticos, as atenções ficam por conta das falas de dirigentes do Fed e do BCE</p>
+                                <a target="_blank" href="https://www.infomoney.com.br/mercados/ibovespa-futuro-acompanha-recuperacao-em-nova-york-e-abre-em-alta/" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/0O2D00ujOoOcM_ngXt3p0lbz7zE=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/q/S/M34TGlScyTqHTaRVZ7gw/2022-09-25t210824z-187007732-rc2low9dough-rtrmadp-3-italy-election.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Resultado final das eleições na Itália confirma maioria para bloco de Georgia Meloni - Globo</h5>
+                                <p class="card-text texto-card texto-descricao">Resultado oficial mostra que a coalizão da direita chegou a mais de 50% na Câmara e no Senado.</p>
+                                <a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/27/meloni-conquista-maioria-folgada-na-italia-confirma-resultado-final-das-eleicoes.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://jpimg.com.br/uploads/2017/04/335171165-joaquim-barbosa-em-sua-ultima-sessao-no-stf-6-1024x657.jpeg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Ex-presidente do STF, Joaquim Barbosa grava vídeo declarando apoio a Lula nas eleições de 2022 - Jovem Pan</h5>
+                                <p class="card-text texto-card texto-descricao">O ex-presidente do Supremo Tribunal Federal Joaquim Barbosa gravou um vídeo declarando apoio à eleição de Luiz Inácio Lula da Silva (PT) para a Presidência do Brasil no próximo domingo, 2. O material foi gravado em Paris, capital da França, onde Barbosa está …</p>
+                                <a target="_blank" href="https://jovempan.com.br/programas/jornal-da-manha/ex-presidente-do-stf-joaquim-barbosa-grava-video-declarando-apoio-a-lula-nas-eleicoes-de-2022.html" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://f.i.uol.com.br/fotografia/2022/01/13/164209399461e05daa9d584_1642093994_3x2_rt.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Rússia eleva ameaça e diz que pode usar armas nucleares contra a Ucrânia - UOL</h5>
+                                <p class="card-text texto-card texto-descricao">Ex-presidente aliado a Putin afirma que Ocidente não vai arriscar 'apocalipse nuclear' para salvar Kiev</p>
+                                <a target="_blank" href="https://www1.folha.uol.com.br/mundo/2022/09/russia-eleva-ameaca-e-diz-que-pode-usar-armas-nucleares-contra-a-ucrania.shtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://www.otempo.com.br/image/contentid/policy:1.2740312:1664278464/acidente-fernaodias-betim-jpg.jpg?f=3x2&q=0.6&w=1200&$p$f$q$w=a82e8f9" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Motociclista morre atropelado por carreta na rodovia Fernão Dias, em Betim - O Tempo</h5>
+                                <p class="card-text texto-card texto-descricao">Acidente ocorreu no sentido São Paulo e deixa o trânsito parcialmente interditado; na manhã de hoje, também foi registrado um engavetamento no sentido BH</p>
+                                <a target="_blank" href="https://www.otempo.com.br/cidades/motociclista-morre-atropelado-por-carreta-na-rodovia-fernao-dias-em-betim-1.2740310" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://www.correio24horas.com.br/fileadmin/_processed_/0/8/csm_Collage_Maker-27-Sep-2022-08.26-AM_8ff9f34964.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Ataque em Barreiras: 'imperícia' de atirador impediu tragédia maior, diz delegado - Jornal Correio</h5>
+                                <p class="card-text texto-card texto-descricao">Polícia investiga se atentado tem relação com casos em outros estados e vai fazer reconstituição</p>
+                                <a target="_blank" href="https://www.correio24horas.com.br/noticia/nid/ataque-em-barreiras-impericia-de-atirador-impediu-tragedia-maior-diz-delegado/" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://medias.itatiaia.com.br/generic/beber-ate-40-gramas-por-dia-de-alcool-acima-dos-60-anos-ajuda-a-prevenir-demencia-aponta-estudo-fae717c2-d9b2-4dbf-9f6d-d7bfd3783f00.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Duas cervejas por dia reduzem risco de demência, aponta estudo - Itatiaia</h5>
+                                <p class="card-text texto-card texto-descricao">Consumo moderados de álcool entre pessoas com mais de 60 anos pode ter efeito protetor contra a demência</p>
+                                <a target="_blank" href="https://www.itatiaia.com.br/editorias/brasil/2022/09/27/duas-cervejas-por-dia-reduzem-risco-de-demencia-aponta-estudo" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s.glbimg.com/jo/g1/static/live/imagens/img_facebook.png?g1" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">O peso de Uber, Ifood: casais gastam 12,6% do orçamento com apps de comida, transporte e streaming - Globo</h5>
+                                <p class="card-text texto-card texto-descricao">Levantamento da fintech de gastos compartilhados Noh mostra que gastos com 'conveniências' é frequente entre duplas e ocupa boa parte do valor destinado a transporte e alimentação.</p>
+                                <a target="_blank" href="https://g1.globo.com/economia/noticia/2022/09/27/o-peso-de-uber-ifood-casais-gastam-126percent-do-orcamento-com-apps-de-comida-transporte-e-streaming.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/qtmeFYDOAM1O6MTSvHz_DBO8Tsc=/1200x/smart/filters:cover():strip_icc()/s04.video.glbimg.com/x720/10965175.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Como usar o e-Título nas Eleições 2022 - Globo</h5>
+                                <p class="card-text texto-card texto-descricao">Aplicativo pode substituir documento impresso com foto para quem cadastrou a biometria junto ao TSE. Emissão do título de eleitor digital estará suspensa em 2 de outubro, dia do primeiro turno.</p>
+                                <a target="_blank" href="https://g1.globo.com/tecnologia/noticia/2022/09/27/como-usar-o-e-titulo-nas-eleicoes-2022.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://extra.globo.com/incoming/25578876-11a-e56/w976h550-PROP/20220912-ea-pantanal-126-.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Final de 'Pantanal' terá três casamentos: confira todos os detalhes sobre os vestidos de noiva de Zefa, Filó e Irma - Extra</h5>
+                                <p class="card-text texto-card texto-descricao">Contamos aqui que o último capítulo de “Pantanal” será marcado por um casamento triplo. Além de José Leôncio (Marcos Palmeira) e Filó (Dira Paes), a cerimônia...</p>
+                                <a target="_blank" href="https://extra.globo.com/tv-e-lazer/telinha/final-de-pantanal-tera-tres-casamentos-confira-todos-os-detalhes-sobre-os-vestidos-de-noiva-de-zefa-filo-irma-25578875.html" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2020/08/17/675x450/1_marcello_casal_jr_agencia_brasil-6234047.jpg?20220927010010?20220927010010" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">BC determina limite de cobrança de taxas nas máquinas de cartão - Correio Braziliense</h5>
+                                <p class="card-text texto-card texto-descricao">Resolução do Banco Central determina taxa máxima de 0,5% sobre a Tarifa de Intercâmbio (TIC) para cartões pré-pagos e de débito. Medida atinge fortemente as fintechs, que obtêm receita significativa ao cobrar até 1,5% dos clientes na operação</p>
+                                <a target="_blank" href="https://www.correiobraziliense.com.br/economia/2022/09/5039749-bc-determina-limite-de-cobranca-de-taxas-nas-maquinas-de-cartao.html" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/kCM9L9WS5R7kKZOLSGrzh6fJ7TM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/i/Y/LaTPNITUmTakBKUUK3Jg/whatsapp-chamada-em-grupo-copia.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">WhatsApp lança links ‘tipo Zoom’ para chamadas de voz ou vídeo; saiba - TechTudo</h5>
+                                <p class="card-text texto-card texto-descricao">Atualização permite que ligação individual ou em grupo seja compartilhada mais facilmente entre usuários; ferramenta estará disponível a partir dessa semana</p>
+                                <a target="_blank" href="https://www.techtudo.com.br/noticias/2022/09/whatsapp-lanca-links-tipo-zoom-para-chamadas-de-voz-ou-video-saiba.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://s2.glbimg.com/0KQGRV2MVMFIT0i4uMQ4qY1jCJw=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/J/A/lykYqXTXqlhN98WK8NAA/2022-08-17t145149z-254225958-rc20yv969efl-rtrmadp-3-space-exploration-moon-rollout.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Nasa suspende lançamento de nave à Lua por causa do furacão Ian - Globo.com</h5>
+                                <p class="card-text texto-card texto-descricao">No sábado (24), a agência espacial já havia anunciado que desistira de tentar lançar o megafoguete nesta terça, mas agora com a confirmação de que o SLS deve voltar ao seu "edifício garagem", a missão poderá atrasar por algumas semanas.</p>
+                                <a target="_blank" href="https://g1.globo.com/ciencia/noticia/2022/09/26/nasa-suspende-lancamento-de-nave-a-lua-por-causa-do-furacao-ian.ghtml" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4 tamanho-card">
+                        <article class="card card bg-cards-color bd-color">
+                            <img src="https://www.cenariomt.com.br/wp-content/uploads/2022/09/campanha-de-vacinacao-contra-a-polio-termina-nesta-sexta-feira-scaled.jpg" class="card-img-top imagem-card" alt="loading...">
+                            <div class="card-body">
+                                <h5 class="card-title  texto-titulo texto-titulo-card">Campanha de vacinação contra a pólio termina nesta sexta-feira - CenárioMT</h5>
+                                <p class="card-text texto-card texto-descricao">A Campanha Nacional de Vacinação contra a Poliomielite e Multivacinação termina na próxima sexta-feira (30). A proposta é reforçar as coberturas vacinais</p>
+                                <a target="_blank" href="https://www.cenariomt.com.br/mundo/campanha-de-vacinacao-contra-a-polio-termina-nesta-sexta-feira/" class="btn btn-light">Continue lendo</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                </section>
+            </div>
+
+            <div class="col-sm-1" id="ultimoAd">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
+                crossorigin="anonymous"></script>
+                <!-- anuncio vertical -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-2772647875947546"
+                    data-ad-slot="8476429541"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+        </main>
+        
+        </div>    
 
     </body>
 </html>
+       
