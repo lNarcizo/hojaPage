@@ -1,618 +1,851 @@
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Page Title</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    </head>
-    <style>
-
-        .row {
-            margin-right: 0;
-        }
-
-        .container-fluid {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .tamanho-card {
-            height : 570px;
-        }
-
-        .btn-dark {
-            border: 1px solid #fff;
-            background: transparent;
-        }
-
-        @media (min-height: 360px) and (max-height: 950px) {
-            .tamanho-card {
-                height : 645px;
-                clear: left;
-            }
-
-            .d-none {
-                display: block!important;
-            }
-
-        }
-
-        @media (min-height: 200px) {
-            .imagem-card {
-                height : 200px;
-            }
-        }
-
-        .imagem-card {
-            max-height: 200px;
-            object-fit: cover;
-        }
-
-        .blog-header-logo {
-            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-        }
-
-        .carousel-center{
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .carousel-caption {
-            right: 0;
-            left: 0;
-            bottom: 0;
-            padding-bottom: 2.25rem;
-        }
-
-        .cr-item {
-            width: 100%;
-            display: block;
-        }
-
-        .cr-img {
-            height: 500px; 
-            object-fit: cover;
-        }
-
-        .bg-nav {
-            background-color: #E1E1E6;
-        }
-
-        .bg-color {
-            background-color: #121214;
-        }
-
-        .bg-cards-color {
-            background-color: #202024;
-        }
-
-        .bd-color {
-            border-color: #323238;
-        }
-
-        .bg-cr-color {
-            background: linear-gradient(0deg, #121214, rgba(0,0,0,0));
-        }
-
-        .texto-apoio {
-            color: #8D8D99;
-        }
-
-        .texto-descricao {
-            color: #C4C4CC;
-        }
-
-        .texto-titulo {
-            color: #E1E1E6;
-        }
-
-        .texto-branco {
-            color: #FFFFFF;
-        }
-    </style>
-    <body class="bg-color">
-        <div class="container-fluid">
-
-            <header>
-                <nav class="navbar  bg-nav justify-content-center">
-                    <div class="d-flex ">
-                        <a class="navbar-brand" href="#">
-                            <img src="./img/Jornal_Hoje_1971.svg" class="icon-dark" alt="" width="50" height="24">
-                        </a>
-                    </div>
-                </nav>
-            </header>
+       <!DOCTYPE html>
+       <html lang="zxx">
+         <head>
+           <!-- Required meta tags -->
+           <meta charset="UTF-8" />
+           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+           <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+           <title>World Vision</title>
+           <!-- plugin css for this page -->
+           <link
+             rel="stylesheet"
+             href="assets/vendors/mdi/css/materialdesignicons.min.css"
+           />
+           <link rel="stylesheet" href="assets/vendors/aos/dist/aos.css/aos.css" />
+           <link
+             rel="stylesheet"
+             href="assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css"
+           />
+           <link
+             rel="stylesheet"
+             href="assets/vendors/owl.carousel/dist/assets/owl.theme.default.min.css"
+           />
+           <!-- End plugin css for this page -->
+           <link rel="shortcut icon" href="assets/images/favicon.png" />
+           <!-- inject:css -->
+           <link rel="stylesheet" href="assets/css/style.css">
+           <!-- endinject -->
+         </head>
+       
+         <body>
+           <div class="container-scroller">
+             <header id="header">
+               <div class="container">
+                 <!-- partial:partials/_navbar.html -->
+                 <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="d-flex justify-content-between align-items-center navbar-top">
+                       <ul class="navbar-left">
+                         <li></li>
+                         <li></li>
+                       </ul>
+                       <div>
+                         <a class="navbar-brand" href="#"
+                           ><img src="assets/images/logo.svg" alt=""
+                         /></a>
+                       </div>
+                       <div class="d-flex">
+                         <ul class="navbar-right">
+                           <li>
+                             <a href="#"></a>
+                           </li>
+                           <li>
+                             <a href="#"></a>
+                           </li>
+                         </ul>
+                         <ul class="social-media" style="display:none">
+                           <li>
+                             <a href="#">
+                               <i class="mdi"></i>
+                             </a>
+                           </li>
+                           <li>
+                             <a href="#">
+                               <i class="mdi"></i>
+                             </a>
+                           </li>
+                           <li>
+                             <a href="#">
+                               <i class="mdi"></i>
+                             </a>
+                           </li>
+                           <li>
+                             <a href="#">
+                               <i class="mdi"></i>
+                             </a>
+                           </li>
+                           <li>
+                             <a href="#">
+                               <i class="mdi"></i>
+                             </a>
+                           </li>
+                         </ul>
+                       </div>
+                     </div>
+                     <div class="navbar-bottom-menu">
+                       <div
+                         class="navbar-collapse justify-content-center collapse"
+                         id="navbarSupportedContent"
+                       >
+                         <ul
+                           class="navbar-nav d-lg-flex justify-content-between align-items-center"
+                         >
+                           <li>
+                             <button class="navbar-close">
+                               <i class="mdi mdi-close"></i>
+                             </button>
+                           </li>
+                           <li class="nav-item active">
+                             <a class="nav-link active" href="index.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./world.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./author.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./news-post.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./business.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./sports.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./art.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./politics.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./real-estate.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="./travel.html"></a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="#"><i class="mdi"></i></a>
+                           </li>
+                         </ul>
+                       </div>
+                     </div>
+                   </nav>
+       
+                 <!-- partial -->
+               </div>
+             </header>
 
             
-        <main class="row justify-content-center mt-4">
-
-            <div class="col-12 mb-4">
-                <div class="carousel-center justify-content-center">
-                    <div id="carouselExampleIndicators"  class="carousel slide col-10 d-flex center-block" data-bs-ride="true">
-                        <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-center">
+                    <h1 class="text-center mt-5">
+                        Mundo
+                    </h1>
+                    <p class="text-secondary fs-15">
+                    </p>
+                    </div>
+                    <h5 class="text-muted font-weight-medium mb-3">Notícias do mundo</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6  mb-5 mb-sm-2">
+                    <div class="position-relative image-hover">
+                    <img
+                        src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0616%2Fr1026004_1296x729_16%2D9.jpg"
+                        class="img-fluid"
+                        alt="world-news"
+                    />
+                    <a target="_blank" href="https://www.espn.com.br/futebol/flamengo/artigo/_/id/11001408/flamengo-bruno-henrique-passar-nova-cirurgia-tres-meses-primeiro-procedimento-joelho-atualiza-cenario-atleta"><span class="thumb-title">Cpntinue lendo</span></a>
+                    </div>
+                    <h1 class="font-weight-600 mt-3">
+                        Bruno Henrique vai passar por nova cirurgia três meses após primeiro procedimento no joelho; Flamengo atualiza cenário do atleta - ESPN.com.br
+                    </h1>
+                    <p class="fs-15 font-weight-normal">
+                    </p>
+                </div>
+                <div class="col-lg-6  mb-5 mb-sm-2">
+                    <div class="row">
+                    <div class="col-sm-6  mb-5 mb-sm-2">
+                        <div class="position-relative image-hover">
+                        <img
+                            src="https://s2.glbimg.com/5tv2sEBiP-vdeQru0eI8PcBrSfM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/3/z/hBOkjvQXWMYMXU9vPxoA/stsci-01ge3ffz3gb70t018fz6kxcs7p-1-.gif"
+                            class="img-fluid"
+                            alt="world-news"
+                        />
+                        <a target="_blank" href="https://g1.globo.com/ciencia/noticia/2022/09/29/james-webb-e-hubble-capturam-explosao-em-asteroide-durante-teste-da-nasa.ghtml"><span class="thumb-title">Cpntinue lendo</span></a>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://images.jota.info/wp-content/uploads/2022/09/52378910436-df814350df-k.jpg" class="w-100 cr-img" alt="loading...">
-                                <div class="carousel-caption d-none d-md-block bg-cr-color cr-item">
-                                    <h5>Quem são os candidatos a deputado estadual e deputado distrital nas eleições 2022 - JOTA</h5>
-                                    <p>Conheça o perfil dos candidatos à Câmara dos Deputados, seus números de urna e quanto receberam para fazer campanha</p>
-                                    <a target="_blank" href="https://www.jota.info/eleicoes/quem-sao-os-candidatos-a-deputado-estadual-e-deputado-distrital-nas-eleicoes-2022-29092022" class="btn btn-dark">Continue lendo</a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://colunadofla.com/wp-content/uploads/2022/09/video-bruno-henrique.png" class="w-100 cr-img" alt="loading...">
-                                <div class="carousel-caption d-none d-md-block bg-cr-color">
-                                    <h5>Em processo de recuperação, Bruno Henrique será submetido à nova cirurgia no Flamengo - Coluna do Fla</h5>
-                                    <p>Departamento médico projeta retorno do atacante para final do primeiro semestre de 2023 O Flamengo divulgou nesta quinta-feira (29) que Bruno Henrique</p>
-                                    <a target="_blank" href="https://colunadofla.com/2022/09/em-processo-de-recuperacao-bruno-henrique-sera-submetido-a-nova-cirurgia-no-flamengo/" class="btn btn-dark">Continue lendo</a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.em.com.br/c5ffS-GyDoASjOvhCQlzlSqPC3A=/600x315/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/09/29/1399892/montagem-entre-lula-bolsonaro-ciro-e-simone-tebet_1_311425.jpg" class="w-100 cr-img" alt="loading...">
-                                <div class="carousel-caption d-none d-md-block bg-cr-color">
-                                    <h5>Debate da Globo: confira horário, quem participa e regras do último debate - Estado de Minas</h5>
-                                    <p>Lula e Bolsonaro se encontram em debate novamente; Ciro, Tebet, Thronicke, Felipe d'Avilla e Padre Kelmon também são presenças confirmadas</p>
-                                    <a target="_blank" href="https://www.em.com.br/app/noticia/politica/2022/09/29/interna_politica,1399892/debate-da-globo-confira-horario-quem-participa-e-regras-do-ultimo-debate.shtml" class="btn btn-dark">Continue lendo</a>
-                                </div>
-                            </div>
+                        <h5 class="font-weight-600 mt-3">
+                            James Webb e Hubble capturam explosão em asteroide durante teste da Nasa - Globo
+                        </h5>
+                        <p class="fs-15 font-weight-normal">
+                        </p>
+                    </div>
+                    <div class="col-sm-6  mb-5 mb-sm-2">
+                        <div class="position-relative image-hover">
+                        <img
+                            src="https://img.r7.com/images/vacina-meningite-28092022155309201?dimensions=771x420&"
+                            class="img-fluid"
+                            alt="world-news"
+                        />
+                        <a target="_blank" href="http://noticias.r7.com/saude/surto-de-meningite-em-sao-paulo-saiba-quem-pode-se-vacinar-e-como-se-prevenir-28092022"><span class="thumb-title">Cpntinue lendo</span></a>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
+                        <h5 class="font-weight-600 mt-3">
+                            Surto de meningite em São Paulo: saiba quem pode se vacinar e como se prevenir - R7
+                        </h5>
+                        <p class="fs-15 font-weight-normal">
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-6  mb-5 mb-sm-2">
+                        <div class="position-relative image-hover">
+                        <img
+                            src="https://conteudo.imguol.com.br/c/parceiros/c0/2022/08/29/f1-red-bull-diz-que-acordo-com-porsche-para-2026-ainda-nao-esta-finalizado-1661781983864_v2_615x300.jpg"
+                            class="img-fluid"
+                            alt="world-news"
+                        />
+                        <a target="_blank" href="https://www.uol.com.br/carros/colunas/jorge-moraes/2022/09/29/porsche-entra-na-bolsa-de-frankfurt-com-valor-de-quase-r-400-bilhoes.htm"><span class="thumb-title">Cpntinue lendo</span></a>
+                        </div>
+                        <h5 class="font-weight-600 mt-3">
+                            Porsche entra na Bolsa de Frankfurt com valor de quase R$ 400 bilhões - UOL
+                        </h5>
+                        <p class="fs-15 font-weight-normal">
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="position-relative image-hover">
+                            <img
+                                src="https://catracalivre.com.br/wp-content/uploads/2022/09/ludmila-dayer.jpg"
+                                class="img-fluid"
+                                alt="world-news"
+                            />
+                            <a target="_blank" href="https://catracalivre.com.br/saude-bem-estar/ex-malhacao-esclerose-multipla-aos-39-anos/"><span class="thumb-title">Cpntinue lendo</span></a>
+                        </div>
+                        <h5 class="font-weight-600 mt-3">
+                            Ex-Malhação revela diagnóstico de esclerose múltipla aos 39 anos - Catraca Livre 
+                        </h5>
+                        <p class="fs-15 font-weight-normal">
+                        </p>
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-12 mb-4">
-                <div class="d-flex w-100 justify-content-center">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
-                    crossorigin="anonymous"></script>
-                    <!-- anuncio horizontal -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-2772647875947546"
-                        data-ad-slot="9502323330"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true">
-                    </ins>
-                    <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
+            </div>
+                <div class="row mt-5">
+                    <div class="col-sm-12">
+                        <h5 class="text-muted font-weight-medium mb-3">Noticias Populares</h5>
+                    </div>
                 </div>
+            <div class="row mb-4">
+                
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://www.rbsdirect.com.br/filestore/9/3/4/6/2/2/4_4a89c86f2bf8f22/4226439_eabea7bea25fca8.jpg?w=1200&h=630&a=c&version=1575255600"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://gauchazh.clicrbs.com.br/porto-alegre/noticia/2022/09/apos-polemica-porto-alegre-tera-passe-livre-no-domingo-de-eleicao-cl8ngookk002i016rozbzbvef.html"><span class="thumb-title">Cpntinue lendo</span></a>
             </div>
-
-            <div class="col-sm-1">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
-                crossorigin="anonymous"></script>
-                <!-- anuncio vertical -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-2772647875947546"
-                    data-ad-slot="8476429541"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true">
-                </ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+            <h5 class="font-weight-600 mt-3">
+                Após polêmica, Porto Alegre terá passe livre no domingo de eleição - GZH
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://tntsports.com.br/__export/1664480543953/sites/esporteinterativo/img/2022/09/20/gettyimages-1425051869.jpg_1954153370.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://tntsports.com.br/futebolbrasileiro/Daniel-Alves-sofre-lesao-no-joelho-e-pode-perder-a-Copa-do-Mundo-20220929-0017.html"><span class="thumb-title">Cpntinue lendo</span></a>
             </div>
-
-            <div class="col-sm-10">
-                <section class="row justify-content-center">
-                    
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://images.jota.info/wp-content/uploads/2022/09/52378910436-df814350df-k.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Quem são os candidatos a deputado estadual e deputado distrital nas eleições 2022 - JOTA</h5>
-                                <p class="card-text texto-card texto-descricao">Conheça o perfil dos candidatos à Câmara dos Deputados, seus números de urna e quanto receberam para fazer campanha</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.jota.info/eleicoes/quem-sao-os-candidatos-a-deputado-estadual-e-deputado-distrital-nas-eleicoes-2022-29092022" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
+            <h5 class="font-weight-600 mt-3">
+                Daniel Alves sofre lesão no joelho e pode perder a Copa do Mundo - TNT Sports Brasil
+            </h5>
+        </div>
         
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://colunadofla.com/wp-content/uploads/2022/09/video-bruno-henrique.png" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Em processo de recuperação, Bruno Henrique será submetido à nova cirurgia no Flamengo - Coluna do Fla</h5>
-                                <p class="card-text texto-card texto-descricao">Departamento médico projeta retorno do atacante para final do primeiro semestre de 2023 O Flamengo divulgou nesta quinta-feira (29) que Bruno Henrique</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://colunadofla.com/2022/09/em-processo-de-recuperacao-bruno-henrique-sera-submetido-a-nova-cirurgia-no-flamengo/" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://i.em.com.br/c5ffS-GyDoASjOvhCQlzlSqPC3A=/600x315/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/09/29/1399892/montagem-entre-lula-bolsonaro-ciro-e-simone-tebet_1_311425.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Debate da Globo: confira horário, quem participa e regras do último debate - Estado de Minas</h5>
-                                <p class="card-text texto-card texto-descricao">Lula e Bolsonaro se encontram em debate novamente; Ciro, Tebet, Thronicke, Felipe d'Avilla e Padre Kelmon também são presenças confirmadas</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.em.com.br/app/noticia/politica/2022/09/29/interna_politica,1399892/debate-da-globo-confira-horario-quem-participa-e-regras-do-ultimo-debate.shtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://bolavip.com/__export/1664452468999/sites/bolavip/img/2022/09/29/craque_1_crop1664452250648.png_242310155.png" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">“É a cara do Corinthians”; Craque Neto agita Fiel na web e se rende a titular de Vítor Pereira no Timão - Bolavip Brasil</h5>
-                                <p class="card-text texto-card texto-descricao">Com o resultado positivo conquistado, o Timão chegou à marca de 47 pontos conquistados na Série A do Brasileirão</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://br.bolavip.com/corinthians/E-a-cara-do-Corinthians-Craque-Neto-agita-Fiel-na-web-e-se-rende-a-titular-de-Vitor-Pereira-no-Timao-20220929-0014.html" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/YbT1i9agXyWN_PP3ulHpeIuaj2w=/1200x/smart/filters:cover():strip_icc()/s04.video.glbimg.com/x720/10975719.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Com números ruins no Atlético-MG, Cuca descarta demissão: "Eu não largo" - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Time teve apenas duas vitórias em 11 jogos, desde o retorno do treinador ao clube; Galo ainda luta por vaga na próxima Libertadores</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://ge.globo.com/futebol/times/atletico-mg/noticia/2022/09/29/com-numeros-ruins-no-atletico-mg-cuca-descarta-demissao-eu-nao-largo.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="./img/Placeholder_view_vector.svg.png" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Jornalista usa camisinha em microfone durante cobertura do furacão Ian - Metrópoles</h5>
-                                <p class="card-text texto-card texto-descricao"></p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.metropoles.com/entretenimento/televisao/jornalista-usa-camisinha-em-microfone-durante-cobertura-do-furacao-ian" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://bolavip.com/__export/1664463103076/sites/bolavip/img/2022/09/29/pantanar-1_x1x.jpg_242310155.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Pantanal: Alcides 'pega pesado', humilha Maria Bruaca e não esconde trauma após abuso cometido por Tenório:... - Bolavip Brasil</h5>
-                                <p class="card-text texto-card texto-descricao">Nos próximos capítulos da novela, o peão não poupará Maria Bruaca e se afastará cada vez mais da amante</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://br.bolavip.com/entretenimento/Pantanal-Alcides-pega-pesado-humilha-Maria-Bruaca-e-nao-esconde-trauma-apos-abuso-cometido-por-Tenorio-Voce-nao-imagina-o-que-eu-passei-20220929-0048.html" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="./img/Placeholder_view_vector.svg.png" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Em decisão unânime, TSE proíbe CACs de transportarem armas e munições no dia da eleição - CartaCapital</h5>
-                                <p class="card-text texto-card texto-descricao"></p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://news.google.com/__i/rss/rd/articles/CBMigAFodHRwczovL3d3dy5jYXJ0YWNhcGl0YWwuY29tLmJyL3BvbGl0aWNhL2VtLWRlY2lzYW8tdW5hbmltZS10c2UtcHJvaWJlLWNhY3MtZGUtdHJhbnNwb3J0YXJlbS1hcm1hcy1lLW11bmljb2VzLW5vLWRpYS1kYS1lbGVpY2FvL9IBAA?oc=5" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://i.ytimg.com/vi/Mxa9-EGvzbw/maxresdefault.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Alexandre de Moraes, Rosa Weber e Rodrigo Pacheco defendem urnas após PL questionar sistema - UOL</h5>
-                                <p class="card-text texto-card texto-descricao">Um dia depois de um relatório do PL, partido do presidente Jair Bolsonaro, questionar as urnas eletrônicas, os ministros Alexandre de Moraes e Rosa Weber, pr...</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.youtube.com/watch?v=Mxa9-EGvzbw" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/m-Pf7IraSTG8T96sfoKC_P1GS9s=/1200x/smart/filters:cover():strip_icc()/s03.video.glbimg.com/x720/10976794.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Cientistas criam laser com inteligência artificial para matar baratas - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Equipamento usa câmeras e um computador para processar a posição do inseto antes de fazer a neutralização com o calor da luz.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://g1.globo.com/inovacao/noticia/2022/09/29/cientistas-criam-laser-com-inteligencia-artificial-para-matar-baratas.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://conteudo.imguol.com.br/c/noticias/2f/2021/12/27/carteira-de-trabalho-digital-1640622077756_v2_615x300.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Brasil criou 278 mil empregos com carteira em agosto, diz governo - UOL Economia</h5>
-                                <p class="card-text texto-card texto-descricao">O Brasil abriu 278.639 empregos com carteira assinada em agosto, segundo dados do Caged (Cadastro Geral de Empregados e Desempregados) divulgados hoje pelo Ministério do Trabalho e Previdência. O número é a diferença entre 2,05 milhões de contratações e 1</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://economia.uol.com.br/noticias/redacao/2022/09/29/caged-empregos-formais-agosto-2022.htm" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://f.i.uol.com.br/fotografia/2022/09/29/16644651966335b92ccd12b_1664465196_3x2_xl.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Rainha Elizabeth 2ª morreu de 'velhice', diz atestado de óbito - UOL</h5>
-                                <p class="card-text texto-card texto-descricao">Segundo certificado divulgado nesta quinta, ela morreu às 15h10 (11h10 em Brasília)</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www1.folha.uol.com.br/mundo/2022/09/rainha-elizabeth-2a-morreu-de-velhice-diz-atestado-de-obito.shtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/5tv2sEBiP-vdeQru0eI8PcBrSfM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/3/z/hBOkjvQXWMYMXU9vPxoA/stsci-01ge3ffz3gb70t018fz6kxcs7p-1-.gif" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">James Webb e Hubble capturam explosão em asteroide durante teste da Nasa - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Pela primeira vez, os dois observatórios apontaram seus instrumentos para o mesmo alvo. Nave da missão DART colidiu na segunda (26) com a lua Dimorphos, que orbita o asteroide Didymos, mas não oferece risco de impacto com o planeta.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://g1.globo.com/ciencia/noticia/2022/09/29/james-webb-e-hubble-capturam-explosao-em-asteroide-durante-teste-da-nasa.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://www.infomoney.com.br/wp-content/uploads/2022/03/GettyImages-1189628790.jpg?quality=70" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Rússia pretende anexar territórios ucranianos após resultados de referendos contestados pelo Ocidente - InfoMoney</h5>
-                                <p class="card-text texto-card texto-descricao">Cerimônia de anexação será realizada na próxima sexta-feira (30)</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.infomoney.com.br/mercados/russia-anexa-territorio-ucraniano-referendo/" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://static.poder360.com.br/2022/09/arte-post-diario-ates-primeiro-turno-site-29-set-2022.png" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">A 3 dias da eleição, vantagem de Lula varia de 7 a 18 pontos - Poder360</h5>
-                                <p class="card-text texto-card texto-descricao">Percentual é referente aos votos válidos; leia os resultados mais recentes sobre a disputa presidencial no Agregador de Pesquisas do “Poder360”</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.poder360.com.br/pesquisas/a-3-dias-da-eleicao-vantagem-de-lula-varia-de-7-a-18-pontos/" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://kanto.legiaodosherois.com.br/w728-h381-gnw-cfill-gcc-f:fbcover/wp-content/uploads/2022/09/legiao_5aW8mwUjECNT.jpeg.webp" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Dahmer: Netflix remove categoria da série após reclamações dos usuários - Legião dos Heróis</h5>
-                                <p class="card-text texto-card texto-descricao">Usuários criticaram a representatividade da minissérie. Mesmo com o grande sucesso, Dahmer: Um Canibal Americano, está gerando algumas polêmicas. Uma</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.legiaodosherois.com.br/2022/dahmer-netflix-remove-categoria-reclamacoes-usuarios.html" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://www.rbsdirect.com.br/imagesrc/35754955.jpg?w=1200&h=630&a=c&version=1575255600" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">O que dizem os vereadores de Porto Alegre sobre eventual retomada do passe livre em dias de eleição - GZH</h5>
-                                <p class="card-text texto-card texto-descricao">Fim do benefício foi aprovado na Câmara Municipal em dezembro do ano passado</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://gauchazh.clicrbs.com.br/porto-alegre/noticia/2022/09/o-que-dizem-os-vereadores-de-porto-alegre-sobre-eventual-retomada-do-passe-livre-em-dias-de-eleicao-cl8m2hhbq0018016rv3r4d8gk.html" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://cdn.ome.lt/jG6hA-HnC3uSChFmxyi6SWGNmR0=/1200x630/smart/extras/conteudos/ryan_Reynolds_e_hugh_Jackman_em_novo_anuncio_oD7UNEY.png" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Diálogo de Ryan Reynolds e Hugh Jackman em vídeo de Deadpool é revelado - Omelete</h5>
-                                <p class="card-text texto-card texto-descricao">Diálogo de Ryan Reynolds e Hugh Jackman em vídeo de Deadpool 3 é revelado</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.omelete.com.br/filmes/ryan-reynolds-hugh-jackman-video-deadpool-dialogo" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://www.netflu.com.br/wp-content/uploads/2022/09/52391650916_9bd58a56c2_b.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">“Me sinto culpado pelo gol de empate do Corinthians”, destaca Michel Araújo - NETFLU</h5>
-                                <p class="card-text texto-card texto-descricao">Nada como um dia após o outro. Seguindo a lógica do "o futebol é dinâmico", um jogador em especial teve uma pequena redenção na última noite. A vitória do</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.netflu.com.br/me-sinto-culpado-pelo-gol-de-empate-do-corinthians-destaca-michel-araujo/" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://www.otempo.com.br/image/contentid/policy:1.2741607:1664453664/coffee-gd44ee0a5a-1280-jpg.jpg?f=3x2&q=0.6&w=1200&$p$f$q$w=bde2345" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Quatro marcas de café tem a comercialização proibida em Minas; veja quais - O Tempo</h5>
-                                <p class="card-text texto-card texto-descricao">Foram encontradas nos produtos impurezas como milho, areias, cascas e paus em uma quantidade acima do permitido pela legislação</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.otempo.com.br/cidades/quatro-marcas-de-cafe-tem-a-comercializacao-proibida-em-minas-veja-quais-1.2741606" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/5aOWlSHHJw1rz-75Fso6b1P8VGs=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/j/P/SWmVpCSYe2ZiGlHFWwmQ/mega.jpeg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Mega-Sena: 23 apostas de Goiás acertam a quina e levam até R$ 175 mil - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Apostas simples levaram cerca de R$ 43 mil; veja dezenas sorteadas. Prêmio total acumulou pela 14ª vez e pode pagar R$ 300 milhões no sábado.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://g1.globo.com/go/goias/noticia/2022/09/29/mega-sena-concurso-2524-23-apostas-de-goias-acertam-a-quina-e-levam-ate-r-131-mil.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://escolaeducacao.com.br/wp-content/uploads/2022/09/saude-mental-na-adolescencia.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Incentive adolescentes a se abrirem para a saúde mental com esse método - Escola Educação</h5>
-                                <p class="card-text texto-card texto-descricao">Entre as fases de maiores dificuldades para todo ser humano, a adolescência é um ponto crítico no desenvolvimento. Os impulsos gerados no momento em que começa a puberdade e todos os estímulos que o corpo começa a receber para a chegada da vida adult</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://escolaeducacao.com.br/incentive-adolescentes-a-se-abrirem-para-a-saude-mental-com-esse-metodo/" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://i.em.com.br/0CjoG-EkNr9NXNhiaQT-Yk6cpdI=/600x315/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/09/29/1399630/presidente-jair-bolsonaro-durante-live-transmitida-no-facebook_1_67981.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Bolsonaro usa fake news para dizer que Forças Armadas podem fechar seção eleitoral - Estado de Minas</h5>
-                                <p class="card-text texto-card texto-descricao">Presidente afirma durante transmissão que TSE avalia impedir eleitores de usarem verde e amarelo</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www1.folha.uol.com.br/poder/2022/09/bolsonaro-usa-fake-news-para-dizer-que-forcas-armadas-podem-fechar-secao-eleitoral.shtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/Xc_edvDuCDYeTd5yw4oHQP1vw9A=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/O/5/UCrdxERfepAq0fuqiDtw/ludmila-dayer.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Ludmila Dayer revela diagnóstico de esclerose múltipla e conta como controla a doença - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Atriz falou em uma transmissão ao vivo em seu Instagram de como descobriu a doença.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://g1.globo.com/pop-arte/noticia/2022/09/29/ludmila-dayer-fala-sobre-diagnostico-de-esclerose-multipla-e-como-controla-a-doenca.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/FOZqLdpoA64kG2PUGD5_VTvLdOI=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/5/s/tdHDDOSdeRHp3sdOgk5w/2022-07-10t141717z-389855750-rc2ays9xjged-rtrmadp-3-ukraine-crisis-gas-nordstream.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Quarto vazamento é detectado no gasoduto Nord Stream no Mar Báltico - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Novo derramamento foi localizado ao nordeste da ilha dinamarquesa de Bornholm, acima do gasoduto Nord Stream 2.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/29/quarto-vazamento-e-detectado-no-gasoduto-nord-stream-no-mar-baltico.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/I1LyEfXoQqz-1MXytA8UFXVve8Q=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/l/C/RJAxaURb24pXPHzaA9Sg/apple-ios16.png" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">iOS 16: saiba como personalizar a tela de bloqueio do iPhone - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Com a atualização, donos de smartphones da Apple podem criar diferentes telas com cores, fontes, widgets e fotos, uma novidade para aparelhos da marca.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://g1.globo.com/tecnologia/ios-16-saiba-como-personalizar-a-tela-de-bloqueio-do-iphone.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/8RN9xkSVjhSmUZnpOM4bpjmf_A4=/1200x/smart/filters:cover():strip_icc()/s03.video.glbimg.com/x720/10965806.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Brasil vacinou apenas 54% das crianças contra a poliomielite; campanha termina na sexta - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Doença, também chamada de paralisia infantil, tem certificado de erradicação no país desde 1994. Meta considerada ideal contra a pólio é de 95%.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://g1.globo.com/saude/noticia/2022/09/29/brasil-vacinou-apenas-54percent-das-criancas-contra-a-poliomielite-campanha-termina-na-sexta.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://f.i.uol.com.br/fotografia/2022/09/28/16643998166334b9c83e548_1664399816_3x2_rt.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Brasil sobe, mas ainda está em 54º lugar em ranking de inovação - UOL</h5>
-                                <p class="card-text texto-card texto-descricao">País ganhou três posições no levantamento anual do IGI, que avalia 132 economias</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www1.folha.uol.com.br/mercado/2022/09/brasil-sobe-mas-ainda-esta-em-54o-lugar-em-ranking-de-inovacao.shtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://s2.glbimg.com/tRCKVbwhGdigW20HSWQtd3QveZM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/4/N/6FUjJdTKyUOZyUaBIYJg/000-32ka99t.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Coreia do Norte dispara mísseis balísticos antes de visita de vice dos EUA a Seul - Globo</h5>
-                                <p class="card-text texto-card texto-descricao">Os norte-coreanos lançaram um número recorde de mísseis neste ano. O serviço de inteligência da Coreia do Sul já alertou que o governo norte-coreano está muito perto de anunciar um novo teste nuclear.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/28/coreia-do-norte-dispara-misseis-balisticos-antes-de-visita-de-vice-dos-eua-a-seul.ghtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://www.infomoney.com.br/wp-content/uploads/2019/06/porsche-mission-e.jpg?quality=70" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Porsche ingressa na bolsa de Frankfurt valendo 75 bilhões de euros - InfoMoney</h5>
-                                <p class="card-text texto-card texto-descricao">A oferta pública inicial (IPO) de ações da fabricante alemã de carros de luxo Porsche na bolsa de Frankfurt, movimentou 75 bilhões de euros.</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.infomoney.com.br/mercados/ipo-porsche-75-bilhoes-euros-bolsa-frankfurt/" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://i.ytimg.com/vi/v6vdxo6hHXY/hqdefault.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">'Desertores russos, vocês não são bem-vindos' | AFP - AFP Português</h5>
-                                <p class="card-text texto-card texto-descricao">Partidários da oposição georgiana protestaram contra a migração "descontrolada" da Rússia. O fluxo dobrou desde que o presidente russo Vladimir Putin declaro...</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www.youtube.com/watch?v=v6vdxo6hHXY" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://img.r7.com/images/vacina-meningite-28092022155309201?dimensions=771x420&" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Surto de meningite em São Paulo: saiba quem pode se vacinar e como se prevenir - R7</h5>
-                                <p class="card-text texto-card texto-descricao">Cinco casos foram registrados em dois bairros da zona leste entre 16 de julho e 15 de setembro; uma mulher morreu</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="http://noticias.r7.com/saude/surto-de-meningite-em-sao-paulo-saiba-quem-pode-se-vacinar-e-como-se-prevenir-28092022" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://cdn.arede.info/img/normal/440000/Variola-dos-MacacosPonta-Grossa_00440150_0_202209281738.jpg?xid=1308228" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Ponta Grossa registra primeiro caso da ‘varíola dos macacos’ - aRede</h5>
-                                <p class="card-text texto-card texto-descricao">Entre os grandes municípios paranaenses, a cidade foi a última a ter um caso confirmado; Paraná já registrou 215 positivados, sendo 11 em mulheres e 204 em homens</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://arede.info/ponta-grossa/440150/ponta-grossa-registra-primeiro-caso-da-variola-dos-macacos" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <article class="card card bg-cards-color bd-color tamanho-card">
-                            <img src="https://f.i.uol.com.br/fotografia/2022/09/28/16643869086334875cc9a31_1664386908_3x2_xl.jpg" class="card-img-top imagem-card" alt="loading...">
-                            <div class="card-body">
-                                <h5 class="card-title  texto-titulo texto-titulo-card">Amazon lança Kindle com caneta para fazer anotações - UOL</h5>
-                                <p class="card-text texto-card texto-descricao">Produto estará disponível nos EUA ainda neste ano; não há previsão de chegada ao Brasil</p>
-                            </div>
-                            <div  class="text-center mb-3"><a target="_blank" href="https://www1.folha.uol.com.br/tec/2022/09/amazon-lanca-kindle-com-caneta-para-fazer-anotacoes.shtml" class="text-center btn btn-dark">Continue lendo</a></div>
-                        </article>
-                    </div>
-        
-                </section>
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://s2.glbimg.com/9eqZ8Ql-B3ehxfK0uDCDcEjU3xU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/D/a/tjxogOSsievUZX9zO7sQ/000-32jm9d7.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://g1.globo.com/mundo/noticia/2022/09/29/emmanuel-macron-da-franca-ameaca-dissolver-assembleia-nacional-para-passar-reforma-da-previdencia.ghtml"><span class="thumb-title">Cpntinue lendo</span></a>
             </div>
-
-            <div class="col-sm-1">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2772647875947546"
-                crossorigin="anonymous"></script>
-                <!-- anuncio vertical -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-2772647875947546"
-                    data-ad-slot="8476429541"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true">
-                </ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-
-        </main>
+            <h5 class="font-weight-600 mt-3">
+                Emmanuel Macron da França ameaça dissolver Assembleia Nacional para passar reforma da Previdência - Globo
+            </h5>
+        </div>
         
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://conteudo.imguol.com.br/c/esporte/cd/2022/08/20/cuca-tecnico-do-atletico-mg-observa-jogadores-durante-partida-contra-o-goias-1661026059403_v2_615x300.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/09/29/atletico-mg-descarta-nova-troca-de-treinador-e-cuca-fica-ate-o-fim-do-ano.htm"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Atlético-MG descarta nova troca de treinador e Cuca fica até o fim do ano - UOL Esporte
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://seucreditodigital.com.br/wp-content/uploads/2022/05/jpg.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://seucreditodigital.com.br/posso-votar-apenas-usando-o-celular/"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Posso votar apenas usando o celular? - Seu Crédito Digital
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://s2.glbimg.com/L5B6FZpY_z82wVMrxFjGxlO1YrI=/1200x/smart/filters:cover():strip_icc()/s02.video.glbimg.com/x720/10729909.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://g1.globo.com/economia/noticia/2022/09/29/contas-do-governo-registraram-saldo-negativo-de-r-50-bilhoes-em-agosto-diz-tesouro-nacional.ghtml"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Contas do governo registram piora e fecham agosto com déficit de R$ 50 bilhões, informa Tesouro - Globo
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0616%2Fr1026004_1296x729_16%2D9.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.espn.com.br/futebol/flamengo/artigo/_/id/11001408/flamengo-bruno-henrique-passar-nova-cirurgia-tres-meses-primeiro-procedimento-joelho-atualiza-cenario-atleta"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Bruno Henrique vai passar por nova cirurgia três meses após primeiro procedimento no joelho; Flamengo atualiza cenário do atleta - ESPN.com.br
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://images.jota.info/wp-content/uploads/2022/09/52378910436-df814350df-k.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.jota.info/eleicoes/quem-sao-os-candidatos-a-deputado-estadual-e-deputado-distrital-nas-eleicoes-2022-29092022"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Quem são os candidatos a deputado estadual e deputado distrital nas eleições 2022 - JOTA
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://ichef.bbci.co.uk/news/1024/branded_portuguese/16879/production/_126818229_terradedeus.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.bbc.com/portuguese/brasil-62920776"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Fome e crise estão abrindo 'hiperperiferias' em São Paulo - BBC News Brasil
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://s2.glbimg.com/DHfZnMLCYv8UxnaCftcqnnOK4GU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/S/A/jBRCzsRDOe9B5lJWQV9w/selo-vale.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://g1.globo.com/politica/eleicoes/2022/noticia/2022/09/29/saiba-quais-sao-as-regras-do-debate-na-globo-com-candidatos-a-presidencia.ghtml"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Saiba quais são as regras do debate na Globo com candidatos à Presidência - Globo
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://meups.com.br/wp-content/uploads/2022/09/Google-Stadia.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://meups.com.br/noticias/google-anuncia-encerramento-do-stadia/"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                No céu tem pão? Google anuncia encerramento do Stadia | MeuPlayStation - MeuPlayStation
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://s2.glbimg.com/uDBiajppkgW2uJW4huBeIKW77lc=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/n/L/FpK3d4SqquLkdQdei4Zw/ondestameucoracao.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://g1.globo.com/pop-arte/noticia/2022/09/29/leticia-colin-e-nos-tempos-do-imperador-sao-indicados-ao-emmy-internacional.ghtml"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Letícia Colin e 'Nos Tempos do Imperador' são indicados ao Emmy Internacional - Globo
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://f.i.uol.com.br/fotografia/2022/09/29/16644645346335b696d9bf8_1664464534_3x2_rt.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www1.folha.uol.com.br/mundo/2022/09/russia-diz-que-ataque-a-gasodutos-foi-obra-de-um-pais-otan-faz-advertencia.shtml"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Rússia diz que ataque a gasodutos foi obra de um país; Otan faz advertência - UOL
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://bolavip.com/__export/1664463103076/sites/bolavip/img/2022/09/29/pantanar-1_x1x.jpg_242310155.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://br.bolavip.com/entretenimento/Pantanal-Alcides-pega-pesado-humilha-Maria-Bruaca-e-nao-esconde-trauma-apos-abuso-cometido-por-Tenorio-Voce-nao-imagina-o-que-eu-passei-20220929-0048.html"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Pantanal: Alcides 'pega pesado', humilha Maria Bruaca e não esconde trauma após abuso cometido por Tenório:... - Bolavip Brasil
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="./img/Placeholder_view_vector.svg.png"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://news.google.com/__i/rss/rd/articles/CBMigAFodHRwczovL3d3dy5jYXJ0YWNhcGl0YWwuY29tLmJyL3BvbGl0aWNhL2VtLWRlY2lzYW8tdW5hbmltZS10c2UtcHJvaWJlLWNhY3MtZGUtdHJhbnNwb3J0YXJlbS1hcm1hcy1lLW11bmljb2VzLW5vLWRpYS1kYS1lbGVpY2FvL9IBAA?oc=5"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Em decisão unânime, TSE proíbe CACs de transportarem armas e munições no dia da eleição - CartaCapital
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://conteudo.imguol.com.br/c/parceiros/c0/2022/08/29/f1-red-bull-diz-que-acordo-com-porsche-para-2026-ainda-nao-esta-finalizado-1661781983864_v2_615x300.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.uol.com.br/carros/colunas/jorge-moraes/2022/09/29/porsche-entra-na-bolsa-de-frankfurt-com-valor-de-quase-r-400-bilhoes.htm"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Porsche entra na Bolsa de Frankfurt com valor de quase R$ 400 bilhões - UOL
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://www.infomoney.com.br/wp-content/uploads/2021/03/Site-thumb-de-materia.png?fit=1280%2C720&quality=70&strip=all"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.infomoney.com.br/economia/caged-brasil-cria-2786-mil-empregos-formais-em-agosto-acima-do-esperado/"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Caged: Brasil cria 278,6 mil empregos formais em agosto, acima do esperado - InfoMoney
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://www.otempo.com.br/image/contentid/policy:1.2741305:1664397382/vacinacao-contra-meningite-jpg.jpg?f=3x2&q=0.6&w=1200&$p$f$q$w=4566964"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.otempo.com.br/cidades/meningite-alta-de-casos-e-baixa-cobertura-vacinal-em-mg-preocupam-autoridades-1.2741300"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Meningite: alta de casos e baixa cobertura vacinal em MG preocupam autoridades - O Tempo
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://www.opovo.com.br/_midias/jpg/2022/08/31/818x460/1_remedios_2912203618_0-19587682.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.opovo.com.br/noticias/ceara/2022/09/29/98-dos-municipios-no-ceara-tem-falta-de-medicamentos-aponta-pesquisa.html"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                98% dos municípios no Ceará têm falta de medicamentos, aponta pesquisa - O POVO
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://f.i.uol.com.br/fotografia/2022/09/29/16644651966335b92ccd12b_1664465196_3x2_xl.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www1.folha.uol.com.br/mundo/2022/09/rainha-elizabeth-2a-morreu-de-velhice-diz-atestado-de-obito.shtml"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Rainha Elizabeth 2ª morreu de 'velhice', diz atestado de óbito - UOL
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://s2.glbimg.com/5tv2sEBiP-vdeQru0eI8PcBrSfM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/3/z/hBOkjvQXWMYMXU9vPxoA/stsci-01ge3ffz3gb70t018fz6kxcs7p-1-.gif"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://g1.globo.com/ciencia/noticia/2022/09/29/james-webb-e-hubble-capturam-explosao-em-asteroide-durante-teste-da-nasa.ghtml"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                James Webb e Hubble capturam explosão em asteroide durante teste da Nasa - Globo
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://kanto.legiaodosherois.com.br/w728-h381-gnw-cfill-gcc-f:fbcover/wp-content/uploads/2022/09/legiao_5aW8mwUjECNT.jpeg.webp"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.legiaodosherois.com.br/2022/dahmer-netflix-remove-categoria-reclamacoes-usuarios.html"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Dahmer: Netflix remove categoria da série após reclamações dos usuários - Legião dos Heróis
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://catracalivre.com.br/wp-content/uploads/2022/09/ludmila-dayer.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://catracalivre.com.br/saude-bem-estar/ex-malhacao-esclerose-multipla-aos-39-anos/"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Ex-Malhação revela diagnóstico de esclerose múltipla aos 39 anos - Catraca Livre 
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://jpimg.com.br/uploads/2022/05/vladimir-putin-1.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://jovempan.com.br/noticias/mundo/apos-referendos-putin-deve-oficializar-anexacao-de-territorios-ucranianos-a-russia-nesta-sexta.html"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Após referendos, Putin deve oficializar anexação de territórios ucranianos à Rússia nesta sexta - Jovem Pan
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2022/09/29/2137992391-dia-mundial-do-coracao-1.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.terra.com.br/vida-e-estilo/degusta/alimentacao-com-saude/dia-mundial-do-coracao-5-alimentos-que-fortalecem-a-saude-do-orgao,739e9acf08d9c268c9a08456cc20e35cu8rky71i.html"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Dia Mundial do Coração: 5 alimentos que fortalecem a saúde do órgão - Terra
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="./img/Placeholder_view_vector.svg.png"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://news.google.com/__i/rss/rd/articles/CBMia2h0dHBzOi8vd3d3LmNhcnRhY2FwaXRhbC5jb20uYnIvcG9saXRpY2EvZXhhbWUtaWRlaWEtYS0zLWRpYXMtZGEtZWxlaWNhby1sdWxhLWNoZWdhLWEtNDktZG9zLXZvdG9zLXZhbGlkb3Mv0gFvaHR0cHM6Ly93d3cuY2FydGFjYXBpdGFsLmNvbS5ici9wb2xpdGljYS9leGFtZS1pZGVpYS1hLTMtZGlhcy1kYS1lbGVpY2FvLWx1bGEtY2hlZ2EtYS00OS1kb3Mtdm90b3MtdmFsaWRvcy9hbXAv?oc=5"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Exame/Ideia: a 3 dias da eleição, Lula chega a 49% dos votos válidos - CartaCapital
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="http://arquivos.tribunadonorte.com.br/fotos/270507.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="http://www.tribunadonorte.com.br/noticia/mega-sena-acumula-e-pra-ximo-concurso-deve-pagar-r-300-milha-es/548320"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Mega-Sena acumula e próximo concurso deve pagar R$ 300 milhões - 29/09/2022 - Notícia - Tribuna do Norte
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://s2.glbimg.com/8RN9xkSVjhSmUZnpOM4bpjmf_A4=/1200x/smart/filters:cover():strip_icc()/s03.video.glbimg.com/x720/10965806.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://g1.globo.com/saude/noticia/2022/09/29/brasil-vacinou-apenas-54percent-das-criancas-contra-a-poliomielite-campanha-termina-na-sexta.ghtml"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Brasil vacinou apenas 54% das crianças contra a poliomielite; campanha termina na sexta - Globo
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://midias.correiobraziliense.com.br/_midias/jpg/2022/09/28/675x450/1_52390909400_0745a1a826_o-26528384.jpg?20220928233500?20220928233500"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.correiobraziliense.com.br/politica/2022/09/5040326-conclusoes-do-pl-sobre-urnas-sao-falsas-e-mentirosas-diz-tse.html"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Conclusões do PL sobre urnas são "falsas e mentirosas", diz TSE - Correio Braziliense
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://static.gazetaesportiva.com/uploads/imagem/2022/09/28/52391992663_5d82235a4d_h.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.gazetaesportiva.com/times/palmeiras/com-vitoria-sobre-o-atletico-mg-palmeiras-iguala-maior-sequencia-invicta-do-brasileirao/"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Com vitória sobre o Atlético-MG, Palmeiras iguala maior sequência invicta do Brasileirão - Gazeta Esportiva
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://img.r7.com/images/vacina-meningite-28092022155309201?dimensions=771x420&"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="http://noticias.r7.com/saude/surto-de-meningite-em-sao-paulo-saiba-quem-pode-se-vacinar-e-como-se-prevenir-28092022"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Surto de meningite em São Paulo: saiba quem pode se vacinar e como se prevenir - R7
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://img.olhardigital.com.br/wp-content/uploads/2022/09/Google-2-1.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://olhardigital.com.br/2022/09/28/internet-e-redes-sociais/google-quer-reinventar-a-busca-na-internet-confira-novidades/"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Google quer reinventar a busca na internet; confira novidades - Olhar Digital
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="./img/Placeholder_view_vector.svg.png"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www.youtube.com/supported_browsers?next_url=https:%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DSiH_vT38eJM"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Aeroporto de Orlando ficará fechado até sexta-feira - Band Jornalismo
+            </h5>
+        </div>
+        
+        <div class="col-sm-3  mb-5 mb-sm-2">
+            <div class="position-relative image-hover">
+            <img
+                src="https://f.i.uol.com.br/fotografia/2022/09/28/16643869086334875cc9a31_1664386908_3x2_xl.jpg"
+                class="img-fluid"
+                alt="world-news"
+            />
+            <a target="_blank" href="https://www1.folha.uol.com.br/tec/2022/09/amazon-lanca-kindle-com-caneta-para-fazer-anotacoes.shtml"><span class="thumb-title">Cpntinue lendo</span></a>
+            </div>
+            <h5 class="font-weight-600 mt-3">
+                Amazon lança Kindle com caneta para fazer anotações - UOL
+            </h5>
+        </div>
+        
+            </div>
+        </div>
+    </div>
+        
+            <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="border-top"></div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                  <ul class="footer-vertical-nav">
+                    <li class="menu-title"><a href="./news-post.html"></a></li>
+                    <li><a href="index.html"></a></li>
+                    <li><a href="./world.html"></a></li>
+                    <li><a href="./author.html"></a></li>
+                    <li><a href="./business.html"></a></li>
+                    <li><a href="./politics.html"></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                  <ul class="footer-vertical-nav">
+                    <li class="menu-title"><a href="./world.html"></a></li>
+                    <li><a href="./sports.html"></a></li>
+                    <li><a href="./art.html"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="./real-estate.html"></a></li>
+                    <li><a href="./travel.html"></a></li>
+                    <li><a href="./author.html"></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                  <ul class="footer-vertical-nav">
+                    <li class="menu-title"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="./news-post.html"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                  <ul class="footer-vertical-nav">
+                    <li class="menu-title"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="./aboutus.html"></a></li>
+                    <li><a href="./contactus.html"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="d-flex justify-content-between">
+                    <img src="assets/images/logo.svg" class="footer-logo" alt="" />
+  
+                    <div class="d-flex justify-content-end footer-social">
+                      <h5 class="m-0 font-weight-600 mr-3 d-none d-lg-flex"></h5>
+                      <ul class="social-media" style="display: none;">
+                        <li>
+                          <a href="#">
+                            <i class="mdi"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="mdi mdi-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="mdi mdi-youtube"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="mdi mdi-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="mdi mdi-twitter"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div
+                    class="d-lg-flex justify-content-between align-items-center border-top mt-5 footer-bottom"
+                  >
+                    <ul class="footer-horizontal-menu">
+                      <li><a href="#">Terms of Use.</a></li>
+                      <li><a href="#">Privacy Policy.</a></li>
+                      <li><a href="#">Accessibility & CC.</a></li>
+                      <li><a href="#">AdChoices.</a></li>
+                      <li><a href="#">Advertise with us Transcripts.</a></li>
+                      <li><a href="#">License.</a></li>
+                      <li><a href="#">Sitemap</a></li>
+                    </ul>
+                    <p class="font-weight-medium">
+                      © 2020 <a href="https://www.bootstrapdash.com/" target="_blank" class="text-dark">@ BootstrapDash</a>, Inc.All Rights Reserved.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>    
-
+            </div>
+          </footer>
+  
+      <!-- partial -->
+      <!-- inject:js -->
+      <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+      <!-- endinject -->
+      <!-- plugin js for this page -->
+      <script src="assets/vendors/aos/dist/aos.js/aos.js"></script>
+      <script src="assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+      <!-- End plugin js for this page -->
+      <!-- Custom js for this page-->
+      <script src="assets/js/demo.js"></script>
+      <!-- End custom js for this page-->
     </body>
-</html>
+  </html>
+  
        
